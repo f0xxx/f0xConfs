@@ -282,9 +282,9 @@
 		<key>0x19-0x60000</key>
 		<dict>
 			<key>Action</key>
-			<integer>39</integer>
+			<integer>11</integer>
 			<key>Text</key>
-			<string></string>
+			<string>0x02 0x39</string>
 		</dict>
 		<key>0x31-0x100000</key>
 		<dict>
@@ -349,6 +349,13 @@
 			<key>Text</key>
 			<string>0x02 0x39</string>
 		</dict>
+		<key>0x60-0x100000</key>
+		<dict>
+			<key>Action</key>
+			<integer>11</integer>
+			<key>Text</key>
+			<string>0x02 0x30</string>
+		</dict>
 		<key>0x6e-0x100000</key>
 		<dict>
 			<key>Action</key>
@@ -381,9 +388,9 @@ Close</string>
 		<key>0x9-0x40000</key>
 		<dict>
 			<key>Action</key>
-			<integer>32</integer>
+			<integer>11</integer>
 			<key>Text</key>
-			<string></string>
+			<string>0x02 0x38</string>
 		</dict>
 		<key>0xf700-0x300000</key>
 		<dict>
@@ -582,7 +589,7 @@ Close</string>
 	<key>NSWindow Frame SessionsPreferences</key>
 	<string>833 557 606 469 0 0 1680 1028 </string>
 	<key>NSWindow Frame SharedPreferences</key>
-	<string>385 324 796 473 0 0 1680 1028 </string>
+	<string>575 415 796 473 0 0 1680 1028 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
 	<string>0 0 1680 1028 0 0 1680 1028 </string>
 	<key>NSWindow Frame iTerm Window 1</key>
@@ -1020,13 +1027,6 @@ Close</string>
 					<key>Text</key>
 					<string> wh</string>
 				</dict>
-				<key>0x68-0x40000</key>
-				<dict>
-					<key>Action</key>
-					<integer>12</integer>
-					<key>Text</key>
-					<string> bp</string>
-				</dict>
 				<key>0x6a-0x100000</key>
 				<dict>
 					<key>Action</key>
@@ -1048,19 +1048,19 @@ Close</string>
 					<key>Text</key>
 					<string> wl</string>
 				</dict>
-				<key>0x6c-0x40000</key>
-				<dict>
-					<key>Action</key>
-					<integer>12</integer>
-					<key>Text</key>
-					<string> bn</string>
-				</dict>
 				<key>0x6d-0x40000</key>
 				<dict>
 					<key>Action</key>
 					<integer>12</integer>
 					<key>Text</key>
 					<string> wm</string>
+				</dict>
+				<key>0x6e-0x40000</key>
+				<dict>
+					<key>Action</key>
+					<integer>12</integer>
+					<key>Text</key>
+					<string> bN</string>
 				</dict>
 				<key>0x6f-0x100000</key>
 				<dict>
@@ -1083,19 +1083,19 @@ Close</string>
 					<key>Text</key>
 					<string> pt</string>
 				</dict>
+				<key>0x71-0x40000</key>
+				<dict>
+					<key>Action</key>
+					<integer>12</integer>
+					<key>Text</key>
+					<string> bd</string>
+				</dict>
 				<key>0x73-0x40000</key>
 				<dict>
 					<key>Action</key>
 					<integer>12</integer>
 					<key>Text</key>
 					<string> fs</string>
-				</dict>
-				<key>0x77-0x40000</key>
-				<dict>
-					<key>Action</key>
-					<integer>12</integer>
-					<key>Text</key>
-					<string> bd</string>
 				</dict>
 				<key>0xf700-0x220000</key>
 				<dict>
@@ -10483,7 +10483,7 @@ Close</string>
 	<key>NoSyncNeverRemindPrefsChangesLostForFile</key>
 	<true/>
 	<key>NoSyncNeverRemindPrefsChangesLostForFile_selection</key>
-	<integer>1</integer>
+	<integer>0</integer>
 	<key>NoSyncNewWindowOrTabFromTmuxOpensTmux</key>
 	<true/>
 	<key>NoSyncPermissionToShowTip</key>
@@ -10586,7 +10586,7 @@ Close</string>
 	<key>Print In Black And White</key>
 	<true/>
 	<key>PromptOnQuit</key>
-	<false/>
+	<true/>
 	<key>QuickPasteBytesPerCall</key>
 	<integer>1536</integer>
 	<key>QuickPasteDelayBetweenCalls</key>
@@ -10608,7 +10608,7 @@ Close</string>
 	<key>SUHasLaunchedBefore</key>
 	<true/>
 	<key>SULastCheckTime</key>
-	<date>2017-10-11T13:38:50Z</date>
+	<date>2017-10-12T14:49:37Z</date>
 	<key>SavePasteHistory</key>
 	<false/>
 	<key>Secure Input</key>

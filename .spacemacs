@@ -31,7 +31,6 @@ values."
    ;; List of configuration layers to load.
    dotspacemacs-configuration-layers
    '(
-     evil-snipe
      ipython-notebook
      search-engine
      dash
@@ -306,7 +305,7 @@ values."
    ;; `trailing' to delete only the whitespace at end of lines, `changed'to
    ;; delete only whitespace for changed lines or `nil' to disable cleanup.
    ;; (default nil)
-   dotspacemacs-whitespace-cleanup nil
+   dotspacemacs-whitespace-cleanup 'all
    ))
 
 (defun dotspacemacs/user-init ()
@@ -353,15 +352,14 @@ you should place your code here."
 
 ;; (defun copy-from-osx ()
 ;;   (shell-command-to-string "pbpaste"))
+;; (setq interprogram-paste-function 'copy-from-osx)
 
 (defun paste-to-osx (text &optional push)
   (let ((process-connection-type nil))
     (let ((proc (start-process "pbcopy" "*Messages*" "pbcopy")))
       (process-send-string proc text)
       (process-send-eof proc))))
-
 (setq interprogram-cut-function 'paste-to-osx)
-;; (setq interprogram-paste-function 'copy-from-osx)
 
 ;; (setq helm-dash-browser-func 'eww)
 (defun helm-dash-start-localhost-server ()
@@ -467,3 +465,8 @@ you should place your code here."
 
 (setq-default dotspacemacs-configuration-layers
               '((evil-snipe :variables evil-snipe-enable-alternate-f-and-t-behaviors t)))
+
+(with-eval-after-load 'company
+  (define-key company-active-map (kbd "C-w") 'evil-delete-backward-word))
+(with-eval-after-load 'helm
+  (define-key helm-map (kbd "C-w") 'evil-delete-backward-word))
