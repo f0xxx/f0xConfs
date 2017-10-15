@@ -28,18 +28,26 @@ else
   Send {Alt Up}
 return
 
+!/::send #1
+!e::send #2
+!r::
+Process, Exist, emacs.exe
+Variable= Errorlevel
+If Variable= 0
+  Run, "C:\Program Files\emacs-25.3_1-x86_64\bin\runemacs.exe"
+Else if Variable != 0
+  send #3
+return
+
 !c::send ^c
 !v::send ^v
 !x::send ^x
 !w::send ^w
 !t::send ^t
 !f::send ^f
+!a::send ^a
 ~^l::send ^{TAB}
 ~^h::send ^+{TAB}
-!/::send #1
-!e::send #2
-!r::send #3
-
 !1::send ^1
 !2::send ^2
 !3::send ^3
@@ -49,7 +57,6 @@ return
 !7::send ^7
 !8::send ^8
 !9::send ^9
-
 !q::send !{F4}
 
 #IfWinActive, ahk_class Emacs
