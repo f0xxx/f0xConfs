@@ -28,7 +28,6 @@ else
   Send {Alt Up}
 return
 
-!/::send #1
 !e::send #2
 !r::
 Process, Exist, emacs.exe
