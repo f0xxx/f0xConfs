@@ -1,0 +1,11 @@
+map b :buffer<Space>
+map h :history!<Space>
+map <Space> openCommandBar
+map <M-j> moveTabLeft
+map <M-k> moveTabRight
+map <C-h> goBack
+map <C-l> goForward
+map <F9> lastUsedTab
+map <F11> :bookmarks!<Space>
+imap <C-w> deleteWord
+imap <C-a> beginningOfLine

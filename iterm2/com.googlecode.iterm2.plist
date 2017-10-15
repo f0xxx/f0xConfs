@@ -279,13 +279,6 @@
 	<real>1</real>
 	<key>GlobalKeyMap</key>
 	<dict>
-		<key>0x19-0x60000</key>
-		<dict>
-			<key>Action</key>
-			<integer>11</integer>
-			<key>Text</key>
-			<string>0x02 0x39</string>
-		</dict>
 		<key>0x31-0x100000</key>
 		<dict>
 			<key>Action</key>
@@ -335,26 +328,26 @@
 			<key>Text</key>
 			<string>0x02 0x37</string>
 		</dict>
-		<key>0x38-0x100000</key>
-		<dict>
-			<key>Action</key>
-			<integer>11</integer>
-			<key>Text</key>
-			<string>0x02 0x38</string>
-		</dict>
-		<key>0x39-0x100000</key>
-		<dict>
-			<key>Action</key>
-			<integer>11</integer>
-			<key>Text</key>
-			<string>0x02 0x39</string>
-		</dict>
 		<key>0x60-0x100000</key>
 		<dict>
 			<key>Action</key>
 			<integer>11</integer>
 			<key>Text</key>
 			<string>0x02 0x30</string>
+		</dict>
+		<key>0x68-0x40000</key>
+		<dict>
+			<key>Action</key>
+			<integer>11</integer>
+			<key>Text</key>
+			<string>0x02 0x39</string>
+		</dict>
+		<key>0x6c-0x40000</key>
+		<dict>
+			<key>Action</key>
+			<integer>11</integer>
+			<key>Text</key>
+			<string>0x02 0x38</string>
 		</dict>
 		<key>0x6e-0x100000</key>
 		<dict>
@@ -384,13 +377,6 @@
 			<key>Text</key>
 			<string>Close
 Close</string>
-		</dict>
-		<key>0x9-0x40000</key>
-		<dict>
-			<key>Action</key>
-			<integer>11</integer>
-			<key>Text</key>
-			<string>0x02 0x38</string>
 		</dict>
 		<key>0xf700-0x300000</key>
 		<dict>
@@ -589,11 +575,11 @@ Close</string>
 	<key>NSWindow Frame SessionsPreferences</key>
 	<string>833 557 606 469 0 0 1680 1028 </string>
 	<key>NSWindow Frame SharedPreferences</key>
-	<string>575 415 796 473 0 0 1680 1028 </string>
+	<string>575 364 1016 512 0 0 1680 1028 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
 	<string>0 0 1680 1028 0 0 1680 1028 </string>
 	<key>NSWindow Frame iTerm Window 1</key>
-	<string>0 0 1680 1028 0 0 1680 1028 </string>
+	<string>0 514 1050 514 0 0 1680 1028 </string>
 	<key>NeverWarnAboutShortLivedSessions_14837F34-E53F-4CF4-AF18-29D1634A6618</key>
 	<true/>
 	<key>NeverWarnAboutShortLivedSessions_14837F34-E53F-4CF4-AF18-29D1634A6618_selection</key>
@@ -1047,6 +1033,13 @@ Close</string>
 					<integer>12</integer>
 					<key>Text</key>
 					<string> wl</string>
+				</dict>
+				<key>0x6d-0x100000</key>
+				<dict>
+					<key>Action</key>
+					<integer>12</integer>
+					<key>Text</key>
+					<string> wv bp wL wh</string>
 				</dict>
 				<key>0x6d-0x40000</key>
 				<dict>
