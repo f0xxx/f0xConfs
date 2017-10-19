@@ -279,6 +279,13 @@
 	<real>1</real>
 	<key>GlobalKeyMap</key>
 	<dict>
+		<key>0x1b-0x100000</key>
+		<dict>
+			<key>Action</key>
+			<integer>11</integer>
+			<key>Text</key>
+			<string>0x07 0x1b</string>
+		</dict>
 		<key>0x31-0x100000</key>
 		<dict>
 			<key>Action</key>
@@ -334,6 +341,13 @@
 			<integer>11</integer>
 			<key>Text</key>
 			<string>0x02 0x30</string>
+		</dict>
+		<key>0x66-0x100000</key>
+		<dict>
+			<key>Action</key>
+			<integer>11</integer>
+			<key>Text</key>
+			<string>0x20 0x2a</string>
 		</dict>
 		<key>0x68-0x40000</key>
 		<dict>
@@ -575,7 +589,7 @@ Close</string>
 	<key>NSWindow Frame SessionsPreferences</key>
 	<string>833 557 606 469 0 0 1680 1028 </string>
 	<key>NSWindow Frame SharedPreferences</key>
-	<string>575 364 1016 512 0 0 1680 1028 </string>
+	<string>575 499 958 451 0 0 1680 1028 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
 	<string>0 0 1680 1028 0 0 1680 1028 </string>
 	<key>NSWindow Frame iTerm Window 1</key>
@@ -1004,7 +1018,7 @@ Close</string>
 					<key>Action</key>
 					<integer>12</integer>
 					<key>Text</key>
-					<string> sS</string>
+					<string> sB</string>
 				</dict>
 				<key>0x68-0x100000</key>
 				<dict>
@@ -1039,7 +1053,7 @@ Close</string>
 					<key>Action</key>
 					<integer>12</integer>
 					<key>Text</key>
-					<string> wv bp wL wh</string>
+					<string> bp wv bn</string>
 				</dict>
 				<key>0x6d-0x40000</key>
 				<dict>
@@ -1076,19 +1090,19 @@ Close</string>
 					<key>Text</key>
 					<string> pt</string>
 				</dict>
-				<key>0x71-0x40000</key>
-				<dict>
-					<key>Action</key>
-					<integer>12</integer>
-					<key>Text</key>
-					<string> bd</string>
-				</dict>
 				<key>0x73-0x40000</key>
 				<dict>
 					<key>Action</key>
 					<integer>12</integer>
 					<key>Text</key>
 					<string> fs</string>
+				</dict>
+				<key>0x79-0x100000</key>
+				<dict>
+					<key>Action</key>
+					<integer>12</integer>
+					<key>Text</key>
+					<string>y wlP wh</string>
 				</dict>
 				<key>0xf700-0x220000</key>
 				<dict>
@@ -10601,7 +10615,7 @@ Close</string>
 	<key>SUHasLaunchedBefore</key>
 	<true/>
 	<key>SULastCheckTime</key>
-	<date>2017-10-12T14:49:37Z</date>
+	<date>2017-10-16T07:38:17Z</date>
 	<key>SavePasteHistory</key>
 	<false/>
 	<key>Secure Input</key>
