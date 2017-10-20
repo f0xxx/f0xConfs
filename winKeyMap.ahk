@@ -15,7 +15,7 @@ return
 If (A_PriorHotKey = "~Shift" AND A_TimeSincePriorHotkey < 200)
   Send, {F11}
 else
-  Send {Shift Up}
+  Send, {Shift Up}
 return
 
 ~Alt::
@@ -25,18 +25,25 @@ return
 If (A_PriorHotKey = "~Alt" AND A_TimeSincePriorHotkey < 200)
   Send, {F9}
 else
-  Send {Alt Up}
+  Send, {Alt Up}
 return
 
-!e::send #2
-!r::
-Process, Exist, emacs.exe
+!`::
+Process, Exist, mintty.exe
 Variable= Errorlevel
-If Variable= 0
-  Run, "C:\Program Files\emacs-25.3_1-x86_64\bin\runemacs.exe"
+If Variable= 0 
+  Run, D:\tools\cygwin64\bin\mintty.exe -i /Cygwin-Terminal.ico -
 Else if Variable != 0
-  send #3
+  send #1
 return
+~!e::send #2
+!r::
+if WinExist("ahk_class Emacs")
+  send #3
+Else if Variable != 0
+  Run, "C:\Program Files\emacs-25.3_1-x86_64\bin\emacsclientw.exe" -na "C:\Program Files\emacs-25.3_1-x86_64\bin\emacsclientw.exe" -c -n
+return
+~!/::send #4
 
 !c::send ^c
 !v::send ^v
@@ -45,8 +52,6 @@ return
 !t::send ^t
 !f::send ^f
 !a::send ^a
-~^l::send ^{TAB}
-~^h::send ^+{TAB}
 !1::send ^1
 !2::send ^2
 !3::send ^3
@@ -59,7 +64,7 @@ return
 !q::send !{F4}
 
 #IfWinActive, ahk_class Emacs
-^q::Send {Space}bd
+; ^q::Send {Space}bd
 ^m::Send {Space}wm
 !m::Send {Space}bp{Space}wv{Space}bn
 ^p::Send {Space}pt
@@ -68,12 +73,16 @@ return
 ^f::Send {Space}ss
 ^s::Send {Space}fs
 ^n::Send {Space}bN
-!j::Send {Space}wj
-!k::Send {Space}wk
-!h::Send {Space}wh
-!l::Send {Space}wl
+; !j::Send {Space}wj
+; !k::Send {Space}wk
+^h::Send {Space}wh
+^l::Send {Space}wl
 ^+v::Send {Space}ry
 ^+f::Send {Space}sf
+!q::Send {Space}qz
 #IfWinActive
 
 #IfWinActive, ahk_class Chrome_WidgetWin_1
+^l::send ^k
+!l::send ^{TAB}
+!h::send ^+{TAB}
