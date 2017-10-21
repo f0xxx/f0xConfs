@@ -80,7 +80,8 @@ return
 ^+v::Send {Space}ry
 ^+f::Send {Space}sf
 !q::Send {Space}qz
-#IfWinActive
+!Enter::Send {F12}
+#IfWinActivee
 
 #IfWinActive, ahk_class Chrome_WidgetWin_1
 ^l::send ^k
