@@ -1,0 +1,13 @@
+BoldAsFont=-1
+CursorType=block
+Font=Source Code Pro
+FontHeight=11
+FontWeight=400
+Scrollbar=none
+Locale=C
+Charset=UTF-8
+Language=en_US
+PgUpDnScroll=yes
+ScrollbackLines=50000
+BackgroundColour=0,0,0
+Term=xterm-256color

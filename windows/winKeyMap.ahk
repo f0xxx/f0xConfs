@@ -81,7 +81,7 @@ If Variable= 0
 Else if Variable != 0
   send #2
 return
-^!r::
+!;::
 if WinExist("ahk_class Emacs")
   send #3
 Else if Variable != 0
