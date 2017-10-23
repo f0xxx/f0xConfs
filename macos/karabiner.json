@@ -64,11 +64,138 @@
                         ]
                     },
                     {
-                        "description": "Vi Mode [D as Trigger Key] (recommended)",
+                        "description": "Press left_shift alone produces F11",
                         "manipulators": [
                             {
                                 "from": {
-                                    "key_code": "d",
+                                    "key_code": "left_shift",
+                                    "modifiers": {
+                                        "optional": [
+                                            "any"
+                                        ]
+                                    }
+                                },
+                                "to": [
+                                    {
+                                        "key_code": "left_shift"
+                                    }
+                                ],
+                                "to_if_alone": [
+                                    {
+                                        "key_code": "f11"
+                                    }
+                                ],
+                                "type": "basic"
+                            }
+                        ]
+                    },
+                    {
+                        "description": "Swap command and control",
+                        "manipulators": [
+                            {
+                                "conditions": [
+                                    {
+                                        "bundle_identifiers": [
+                                            "com\\.microsoft\\.rdc\\.mac"
+                                        ],
+                                        "type": "frontmost_application_if"
+                                    }
+                                ],
+                                "from": {
+                                    "key_code": "left_control",
+                                    "modifiers": {
+                                        "optional": [
+                                            "any"
+                                        ]
+                                    }
+                                },
+                                "to": [
+                                    {
+                                        "key_code": "left_command"
+                                    }
+                                ],
+                                "type": "basic"
+                            },
+                            {
+                                "conditions": [
+                                    {
+                                        "bundle_identifiers": [
+                                            "com\\.microsoft\\.rdc\\.mac"
+                                        ],
+                                        "type": "frontmost_application_if"
+                                    }
+                                ],
+                                "from": {
+                                    "key_code": "left_command",
+                                    "modifiers": {
+                                        "optional": [
+                                            "any"
+                                        ]
+                                    }
+                                },
+                                "to": [
+                                    {
+                                        "key_code": "left_control"
+                                    }
+                                ],
+                                "type": "basic"
+                            },
+                            {
+                                "conditions": [
+                                    {
+                                        "bundle_identifiers": [
+                                            "com\\.microsoft\\.rdc\\.mac"
+                                        ],
+                                        "type": "frontmost_application_if"
+                                    }
+                                ],
+                                "from": {
+                                    "key_code": "right_control",
+                                    "modifiers": {
+                                        "optional": [
+                                            "any"
+                                        ]
+                                    }
+                                },
+                                "to": [
+                                    {
+                                        "key_code": "right_command"
+                                    }
+                                ],
+                                "type": "basic"
+                            },
+                            {
+                                "conditions": [
+                                    {
+                                        "bundle_identifiers": [
+                                            "com\\.microsoft\\.rdc\\.mac"
+                                        ],
+                                        "type": "frontmost_application_if"
+                                    }
+                                ],
+                                "from": {
+                                    "key_code": "right_command",
+                                    "modifiers": {
+                                        "optional": [
+                                            "any"
+                                        ]
+                                    }
+                                },
+                                "to": [
+                                    {
+                                        "key_code": "right_control"
+                                    }
+                                ],
+                                "type": "basic"
+                            }
+                        ]
+                    },
+                    {
+                        "description": "Vi Mode [S as Trigger Key]",
+                        "manipulators": [
+                            {
+                                "from": {
+                                    "key_code": "s",
                                     "modifiers": {
                                         "optional": [
                                             "caps_lock"
@@ -93,7 +220,7 @@
                                 ],
                                 "to_if_alone": [
                                     {
-                                        "key_code": "d"
+                                        "key_code": "s"
                                     }
                                 ],
                                 "type": "basic"
@@ -492,7 +619,9 @@
                                         "modifiers": [
                                             "left_shift"
                                         ]
-                                    },
+                                    }
+                                ],
+                                "to_after_key_up": [
                                     {
                                         "key_code": "vk_none"
                                     }
@@ -521,7 +650,9 @@
                                         "modifiers": [
                                             "left_shift"
                                         ]
-                                    },
+                                    }
+                                ],
+                                "to_after_key_up": [
                                     {
                                         "key_code": "vk_none"
                                     }
@@ -550,7 +681,9 @@
                                         "modifiers": [
                                             "left_shift"
                                         ]
-                                    },
+                                    }
+                                ],
+                                "to_after_key_up": [
                                     {
                                         "key_code": "vk_none"
                                     }
@@ -579,7 +712,9 @@
                                         "modifiers": [
                                             "left_shift"
                                         ]
-                                    },
+                                    }
+                                ],
+                                "to_after_key_up": [
                                     {
                                         "key_code": "vk_none"
                                     }
@@ -670,7 +805,9 @@
                                             "left_shift",
                                             "left_option"
                                         ]
-                                    },
+                                    }
+                                ],
+                                "to_after_key_up": [
                                     {
                                         "key_code": "vk_none"
                                     }
@@ -700,7 +837,9 @@
                                             "left_shift",
                                             "left_option"
                                         ]
-                                    },
+                                    }
+                                ],
+                                "to_after_key_up": [
                                     {
                                         "key_code": "vk_none"
                                     }
@@ -731,7 +870,9 @@
                                             "left_shift",
                                             "left_option"
                                         ]
-                                    },
+                                    }
+                                ],
+                                "to_after_key_up": [
                                     {
                                         "key_code": "vk_none"
                                     }
@@ -762,7 +903,9 @@
                                             "left_shift",
                                             "left_option"
                                         ]
-                                    },
+                                    }
+                                ],
+                                "to_after_key_up": [
                                     {
                                         "key_code": "vk_none"
                                     }
@@ -810,7 +953,7 @@
                                 },
                                 "to": [
                                     {
-                                        "key_code": "d"
+                                        "key_code": "s"
                                     },
                                     {
                                         "key_code": "return_or_enter"
@@ -839,7 +982,7 @@
                                 },
                                 "to": [
                                     {
-                                        "key_code": "d"
+                                        "key_code": "s"
                                     },
                                     {
                                         "key_code": "spacebar"
@@ -868,7 +1011,7 @@
                                 },
                                 "to": [
                                     {
-                                        "key_code": "d"
+                                        "key_code": "s"
                                     },
                                     {
                                         "key_code": "tab"
@@ -897,7 +1040,7 @@
                                 },
                                 "to": [
                                     {
-                                        "key_code": "d"
+                                        "key_code": "s"
                                     },
                                     {
                                         "key_code": "hyphen"
@@ -926,7 +1069,7 @@
                                 },
                                 "to": [
                                     {
-                                        "key_code": "d"
+                                        "key_code": "s"
                                     },
                                     {
                                         "key_code": "equal_sign"
@@ -955,7 +1098,7 @@
                                 },
                                 "to": [
                                     {
-                                        "key_code": "d"
+                                        "key_code": "s"
                                     },
                                     {
                                         "key_code": "open_bracket"
@@ -984,7 +1127,7 @@
                                 },
                                 "to": [
                                     {
-                                        "key_code": "d"
+                                        "key_code": "s"
                                     },
                                     {
                                         "key_code": "close_bracket"
@@ -1013,7 +1156,7 @@
                                 },
                                 "to": [
                                     {
-                                        "key_code": "d"
+                                        "key_code": "s"
                                     },
                                     {
                                         "key_code": "backslash"
@@ -1042,7 +1185,7 @@
                                 },
                                 "to": [
                                     {
-                                        "key_code": "d"
+                                        "key_code": "s"
                                     },
                                     {
                                         "key_code": "non_us_pound"
@@ -1071,7 +1214,7 @@
                                 },
                                 "to": [
                                     {
-                                        "key_code": "d"
+                                        "key_code": "s"
                                     },
                                     {
                                         "key_code": "semicolon"
@@ -1100,7 +1243,7 @@
                                 },
                                 "to": [
                                     {
-                                        "key_code": "d"
+                                        "key_code": "s"
                                     },
                                     {
                                         "key_code": "quote"
@@ -1129,7 +1272,7 @@
                                 },
                                 "to": [
                                     {
-                                        "key_code": "d"
+                                        "key_code": "s"
                                     },
                                     {
                                         "key_code": "grave_accent_and_tilde"
@@ -1158,7 +1301,7 @@
                                 },
                                 "to": [
                                     {
-                                        "key_code": "d"
+                                        "key_code": "s"
                                     },
                                     {
                                         "key_code": "comma"
@@ -1187,7 +1330,7 @@
                                 },
                                 "to": [
                                     {
-                                        "key_code": "d"
+                                        "key_code": "s"
                                     },
                                     {
                                         "key_code": "period"
@@ -1216,7 +1359,7 @@
                                 },
                                 "to": [
                                     {
-                                        "key_code": "d"
+                                        "key_code": "s"
                                     },
                                     {
                                         "key_code": "slash"
@@ -1245,7 +1388,7 @@
                                 },
                                 "to": [
                                     {
-                                        "key_code": "d"
+                                        "key_code": "s"
                                     },
                                     {
                                         "key_code": "non_us_backslash"
@@ -1274,7 +1417,7 @@
                                 },
                                 "to": [
                                     {
-                                        "key_code": "d"
+                                        "key_code": "s"
                                     },
                                     {
                                         "key_code": "1"
@@ -1303,7 +1446,7 @@
                                 },
                                 "to": [
                                     {
-                                        "key_code": "d"
+                                        "key_code": "s"
                                     },
                                     {
                                         "key_code": "2"
@@ -1332,7 +1475,7 @@
                                 },
                                 "to": [
                                     {
-                                        "key_code": "d"
+                                        "key_code": "s"
                                     },
                                     {
                                         "key_code": "3"
@@ -1361,7 +1504,7 @@
                                 },
                                 "to": [
                                     {
-                                        "key_code": "d"
+                                        "key_code": "s"
                                     },
                                     {
                                         "key_code": "5"
@@ -1390,7 +1533,7 @@
                                 },
                                 "to": [
                                     {
-                                        "key_code": "d"
+                                        "key_code": "s"
                                     },
                                     {
                                         "key_code": "6"
@@ -1419,7 +1562,7 @@
                                 },
                                 "to": [
                                     {
-                                        "key_code": "d"
+                                        "key_code": "s"
                                     },
                                     {
                                         "key_code": "7"
@@ -1448,7 +1591,7 @@
                                 },
                                 "to": [
                                     {
-                                        "key_code": "d"
+                                        "key_code": "s"
                                     },
                                     {
                                         "key_code": "8"
@@ -1477,7 +1620,7 @@
                                 },
                                 "to": [
                                     {
-                                        "key_code": "d"
+                                        "key_code": "s"
                                     },
                                     {
                                         "key_code": "9"
@@ -1506,7 +1649,7 @@
                                 },
                                 "to": [
                                     {
-                                        "key_code": "d"
+                                        "key_code": "s"
                                     },
                                     {
                                         "key_code": "a"
@@ -1535,7 +1678,7 @@
                                 },
                                 "to": [
                                     {
-                                        "key_code": "d"
+                                        "key_code": "s"
                                     },
                                     {
                                         "key_code": "b"
@@ -1564,10 +1707,39 @@
                                 },
                                 "to": [
                                     {
-                                        "key_code": "d"
+                                        "key_code": "s"
                                     },
                                     {
                                         "key_code": "c"
+                                    },
+                                    {
+                                        "key_code": "vk_none"
+                                    }
+                                ],
+                                "type": "basic"
+                            },
+                            {
+                                "conditions": [
+                                    {
+                                        "name": "vi_mode",
+                                        "type": "variable_if",
+                                        "value": 1
+                                    }
+                                ],
+                                "from": {
+                                    "key_code": "d",
+                                    "modifiers": {
+                                        "optional": [
+                                            "caps_lock"
+                                        ]
+                                    }
+                                },
+                                "to": [
+                                    {
+                                        "key_code": "s"
+                                    },
+                                    {
+                                        "key_code": "d"
                                     },
                                     {
                                         "key_code": "vk_none"
@@ -1593,7 +1765,7 @@
                                 },
                                 "to": [
                                     {
-                                        "key_code": "d"
+                                        "key_code": "s"
                                     },
                                     {
                                         "key_code": "e"
@@ -1622,7 +1794,7 @@
                                 },
                                 "to": [
                                     {
-                                        "key_code": "d"
+                                        "key_code": "s"
                                     },
                                     {
                                         "key_code": "g"
@@ -1651,7 +1823,7 @@
                                 },
                                 "to": [
                                     {
-                                        "key_code": "d"
+                                        "key_code": "s"
                                     },
                                     {
                                         "key_code": "i"
@@ -1680,7 +1852,7 @@
                                 },
                                 "to": [
                                     {
-                                        "key_code": "d"
+                                        "key_code": "s"
                                     },
                                     {
                                         "key_code": "m"
@@ -1709,7 +1881,7 @@
                                 },
                                 "to": [
                                     {
-                                        "key_code": "d"
+                                        "key_code": "s"
                                     },
                                     {
                                         "key_code": "n"
@@ -1738,7 +1910,7 @@
                                 },
                                 "to": [
                                     {
-                                        "key_code": "d"
+                                        "key_code": "s"
                                     },
                                     {
                                         "key_code": "o"
@@ -1767,7 +1939,7 @@
                                 },
                                 "to": [
                                     {
-                                        "key_code": "d"
+                                        "key_code": "s"
                                     },
                                     {
                                         "key_code": "p"
@@ -1796,7 +1968,7 @@
                                 },
                                 "to": [
                                     {
-                                        "key_code": "d"
+                                        "key_code": "s"
                                     },
                                     {
                                         "key_code": "q"
@@ -1825,39 +1997,10 @@
                                 },
                                 "to": [
                                     {
-                                        "key_code": "d"
+                                        "key_code": "s"
                                     },
                                     {
                                         "key_code": "r"
-                                    },
-                                    {
-                                        "key_code": "vk_none"
-                                    }
-                                ],
-                                "type": "basic"
-                            },
-                            {
-                                "conditions": [
-                                    {
-                                        "name": "vi_mode",
-                                        "type": "variable_if",
-                                        "value": 1
-                                    }
-                                ],
-                                "from": {
-                                    "key_code": "s",
-                                    "modifiers": {
-                                        "optional": [
-                                            "caps_lock"
-                                        ]
-                                    }
-                                },
-                                "to": [
-                                    {
-                                        "key_code": "d"
-                                    },
-                                    {
-                                        "key_code": "s"
                                     },
                                     {
                                         "key_code": "vk_none"
@@ -1883,7 +2026,7 @@
                                 },
                                 "to": [
                                     {
-                                        "key_code": "d"
+                                        "key_code": "s"
                                     },
                                     {
                                         "key_code": "t"
@@ -1912,7 +2055,7 @@
                                 },
                                 "to": [
                                     {
-                                        "key_code": "d"
+                                        "key_code": "s"
                                     },
                                     {
                                         "key_code": "u"
@@ -1941,7 +2084,7 @@
                                 },
                                 "to": [
                                     {
-                                        "key_code": "d"
+                                        "key_code": "s"
                                     },
                                     {
                                         "key_code": "w"
@@ -1970,7 +2113,7 @@
                                 },
                                 "to": [
                                     {
-                                        "key_code": "d"
+                                        "key_code": "s"
                                     },
                                     {
                                         "key_code": "x"
@@ -1999,7 +2142,7 @@
                                 },
                                 "to": [
                                     {
-                                        "key_code": "d"
+                                        "key_code": "s"
                                     },
                                     {
                                         "key_code": "y"
@@ -2028,140 +2171,13 @@
                                 },
                                 "to": [
                                     {
-                                        "key_code": "d"
+                                        "key_code": "s"
                                     },
                                     {
                                         "key_code": "z"
                                     },
                                     {
                                         "key_code": "vk_none"
-                                    }
-                                ],
-                                "type": "basic"
-                            }
-                        ]
-                    },
-                    {
-                        "description": "Press left_shift alone produces F11",
-                        "manipulators": [
-                            {
-                                "from": {
-                                    "key_code": "left_shift",
-                                    "modifiers": {
-                                        "optional": [
-                                            "any"
-                                        ]
-                                    }
-                                },
-                                "to": [
-                                    {
-                                        "key_code": "left_shift"
-                                    }
-                                ],
-                                "to_if_alone": [
-                                    {
-                                        "key_code": "f11"
-                                    }
-                                ],
-                                "type": "basic"
-                            }
-                        ]
-                    },
-                    {
-                        "description": "Swap command and control",
-                        "manipulators": [
-                            {
-                                "conditions": [
-                                    {
-                                        "bundle_identifiers": [
-                                            "com\\.microsoft\\.rdc\\.mac"
-                                        ],
-                                        "type": "frontmost_application_if"
-                                    }
-                                ],
-                                "from": {
-                                    "key_code": "left_control",
-                                    "modifiers": {
-                                        "optional": [
-                                            "any"
-                                        ]
-                                    }
-                                },
-                                "to": [
-                                    {
-                                        "key_code": "left_command"
-                                    }
-                                ],
-                                "type": "basic"
-                            },
-                            {
-                                "conditions": [
-                                    {
-                                        "bundle_identifiers": [
-                                            "com\\.microsoft\\.rdc\\.mac"
-                                        ],
-                                        "type": "frontmost_application_if"
-                                    }
-                                ],
-                                "from": {
-                                    "key_code": "left_command",
-                                    "modifiers": {
-                                        "optional": [
-                                            "any"
-                                        ]
-                                    }
-                                },
-                                "to": [
-                                    {
-                                        "key_code": "left_control"
-                                    }
-                                ],
-                                "type": "basic"
-                            },
-                            {
-                                "conditions": [
-                                    {
-                                        "bundle_identifiers": [
-                                            "com\\.microsoft\\.rdc\\.mac"
-                                        ],
-                                        "type": "frontmost_application_if"
-                                    }
-                                ],
-                                "from": {
-                                    "key_code": "right_control",
-                                    "modifiers": {
-                                        "optional": [
-                                            "any"
-                                        ]
-                                    }
-                                },
-                                "to": [
-                                    {
-                                        "key_code": "right_command"
-                                    }
-                                ],
-                                "type": "basic"
-                            },
-                            {
-                                "conditions": [
-                                    {
-                                        "bundle_identifiers": [
-                                            "com\\.microsoft\\.rdc\\.mac"
-                                        ],
-                                        "type": "frontmost_application_if"
-                                    }
-                                ],
-                                "from": {
-                                    "key_code": "right_command",
-                                    "modifiers": {
-                                        "optional": [
-                                            "any"
-                                        ]
-                                    }
-                                },
-                                "to": [
-                                    {
-                                        "key_code": "right_control"
                                     }
                                 ],
                                 "type": "basic"

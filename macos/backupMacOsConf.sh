@@ -1,6 +1,6 @@
 #!/bin/bash
-cp -fv ~/.spacemacs ~/tools/conf
-cp -fv ~/.spacemacs ~/tools/conf
-cp -fv ~/.tmux.conf ~/tools/conf
-cp -fv ~/.zshrc ~/tools/conf
-cp -fv ~/.config/karabiner/karabiner.json ~/tools/conf
+cp -fv ~/.spacemacs ~/tools/f0xConfs/macos/
+cp -fv ~/.spacemacs ~/tools/f0xConfs/macos/
+cp -fv ~/.tmux.conf ~/tools/f0xConfs/macos/
+cp -fv ~/.zshrc ~/tools/f0xConfs/macos/
+cp -fv ~/.config/karabiner/karabiner.json ~/tools/f0xConfs/macos/
