@@ -1,0 +1,106 @@
+* todo main
+** TODO English
+** TODO 意识 气 (大唐 简史 五轮书 串联)
+** TODO 游戏练心 (开启模式:井中月)
+** TODO 人工智能
+*** TODO 语音识别系统研究
+* todo list 1:                                                     :todolist:
+** DONE curl -u "lin.wang1:74c3EuweT1XrSyNoapcKuNU6Fvy65jY/cO8Eli1rcbBH3FDrPDFhEWO4aDv+zbHm5+2da4S7c/mBk77SmGvm3ZajoRV6C+bBnrMT3YngrSw="  -X POST -d '{"title": "test","description": "test","state": "OPEN","open": true,"closed": false,"fromRef": {"id": "refs/heads/APPSOL-62357","repository": {"slug": "nba","name": null,"project": {"key": "AS"}}},"toRef": {"id": "refs/heads/master","repository": {"slug": "nba","name": null,"project": {"key": "AS"}}},"locked": false,"reviewers": [{"user": {"name": "Yu.Wen"}}]}' -H "Content-Type: application/json" https://stash.veritas.com/rest/api/1.0/projects/AS/repos/nba/pull-requests
+   CLOSED: [2017-06-14 三 18:13]
+
+** DONE go/ruby/python env building
+   CLOSED: [2016-12-27 二 18:34]
+** DONE add code snippet for emacs
+   CLOSED: [2016-12-27 Tue 19:26]
+** DONE read cvim help documentation for using chrome more efficient
+   CLOSED: [2016-12-29 Thu 15:45]
+** DONE 到店率
+   CLOSED: [2017-06-13 二 17:54]
+** DONE dingding development
+   CLOSED: [2017-06-13 二 17:51]
+*** DONE restful api using JS
+    CLOSED: [2017-06-13 二 17:54]
+** DONE SMS send for tanfony ios app
+   CLOSED: [2017-06-13 二 17:51]
+** DONE 截止日期处理 23:59
+   CLOSED: [2017-06-13 二 17:51]
+** DONE using e-mail in emacs
+   CLOSED: [2017-10-11 三 00:39]
+** DONE using some method to redo the command key sequences in emacs
+   CLOSED: [2017-07-07 五 00:48]
+** DONE add more keybind for spacemacs
+   CLOSED: [2017-10-11 三 17:27]
+** DONE highlight issue in emacs
+   CLOSED: [2017-10-12 四 13:48]
+** DONE save configuration files to github
+   CLOSED: [2017-10-12 四 14:06]
+** TODO add code search in github keybind
+* todo list 2:
+** DONE 报销
+   CLOSED: [2017-07-19 三 16:52]
+*** DONE phone charge
+    CLOSED: [2016-12-27 二 15:40]
+*** DONE medical Charge
+    CLOSED: [2016-12-29 Thu 15:44]
+*** DONE glass Charge
+    CLOSED: [2017-06-13 二 17:56]
+** DONE 车位合同
+   CLOSED: [2017-06-13 二 17:50]
+** DONE 公积金
+   CLOSED: [2017-07-25 二 10:47]
+** DONE clean car
+   CLOSED: [2017-07-25 二 09:20]
+** DONE clean charge
+   CLOSED: [2017-07-20 四 09:34]
+** DONE 大西北土特产
+   CLOSED: [2017-07-24 一 13:30]
+** TODO 体检
+** TODO 交职称评定材料
+* info 1:
+** dingding:Ihad123
+** How to format code in Xcode：
+*** Cmd ⌘ A + Ctrl I
+** 报销凭据:
+*** 处方
+*** 病历
+*** 发票
+*** 报告
+** 理财
+** freelancer Ihad9527
+** iCloud jianminwa
+** https://github.com/vsouza/awesome-ios#getting-started
+** http://115.28.40.27:8080/erp-test/signIn
+*** ;jsessionid=73C82C6034C4515379E2DA81608C0E05?0
+*** testadmin/123456
+** trello IhadTTTT
+** tanfony server:
+*** 121.42.165.158
+*** dirDEL123
+** testadmin -> 9283a03246ef2dacdc21a9b137817ec1
+** 钉钉中转:
+*** ngrok http 3000
+    /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+别再说中国大陆没好电影了，去年有八部优秀作品在国际上取得了奖项，可是由于众所周知的原因，国内是不会上映的，他们分别是《塔洛》《路边野餐》《长江图》《河》《少年小赵》《痴》《大路朝天》《悲兮魔兽》《河》
+** 请知悉在2017年，四川外服上门服务时间仍定于每月的第2个和第4个星期二上午10：00-12：00，如有需要届时请到A座1楼大厅（前台）处
+   除此之外，如在社保、公积金等方面需要帮助请通过如下任一方式直接联系付波先生：
+   四川省外国企业服务有限责任公司
+   Sichuan Foreign Enterprises Service Co., Ltd.
+   四川省成都市顺城大街206号四川国际大厦7楼A座（邮编：610015）
+   Sichuan International Building, No.206 Shuncheng Street
+   Chengdu, Sichuan, China 610015
+   TEL: 86 028-86520806
+   FAX: 86 028-86520452
+   手机：15908190693
+   业务二部副经理   ： 付波
+   微信号：fb4986334
+** Hide finder
+*** Reboot your Mac into Recovery Mode by restarting your computer and holding down Command+R until the Apple logo appears on your screen.
+*** Click Utilities > Terminal. In the Terminal window, type in csrutil disable and press Enter.
+*** Restart your Mac.
+* job info:
+** appliance dns setting
+ nb-appliance.Network> DNS Add Nameserver 172.16.8.32
+ - [Info] Successfully updated the configuration
+ nb-appliance.Network> DNS Domain cdc.veritas.com
+ - [Info] Successfully updated the configuration
+ nb-appliance.Network> Hostname Set i27-eng138

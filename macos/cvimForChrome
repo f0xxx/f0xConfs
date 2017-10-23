@@ -1,7 +1,6 @@
 map B :bookmarks!<Space>
 map b :buffer<Space>
 map h :history!<Space>
-map <Space> openCommandBar
 map <M-j> moveTabLeft
 map <M-k> moveTabRight
 map <A-j> moveTabLeft
