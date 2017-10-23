@@ -19,22 +19,22 @@
 !9::send ^9
 !q::send !{F4}
 
-; ~Tab & j::send {Down}
-; ~Tab & k::send {Up}
-; ~Tab & h::send {Left}
-; ~Tab & l::send {Right}
-; ~Tab & d::send {PgDn}
-; ~Tab & u::send {PgUp}
+~s & j::send {Down}
+~s & k::send {Up}
+~s & h::send {Left}
+~s & l::send {Right}
+~s & d::send {PgDn}
+~s & u::send {PgUp}
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ; mouse keybind 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
-~Tab & k::mousemove 0, -18, 0, R
-~Tab & j::MouseMove 0, 18, 0, R
-~Tab & h::MouseMove -18, 0, 0, R
-~Tab & l::MouseMove 18, 0, 0, R
-~Tab & u::MouseClick
-~Tab & i::MouseClick, Right
+~d & k::mousemove 0, -18, 0, R
+~d & j::MouseMove 0, 18, 0, R
+~d & h::MouseMove -18, 0, 0, R
+~d & l::MouseMove 18, 0, 0, R
+~d & u::MouseClick
+~d & i::MouseClick, Right
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ; press alone key
@@ -162,6 +162,7 @@ return
 !q::Send {Space}qz
 
 #IfWinActive, ahk_class Chrome_WidgetWin_1
-^l::send ^k
+^h::send !{Left}
+^l::send !{Right}
 !l::send ^{TAB}
 !h::send ^+{TAB}
