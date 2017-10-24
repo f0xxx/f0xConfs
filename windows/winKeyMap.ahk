@@ -19,22 +19,22 @@
 !9::send ^9
 !q::send !{F4}
 
-~s & j::send {Down}
-~s & k::send {Up}
-~s & h::send {Left}
-~s & l::send {Right}
-~s & d::send {PgDn}
-~s & u::send {PgUp}
+; ~s & j::send {Down}
+; ~s & k::send {Up}
+; ~s & h::send {Left}
+; ~s & l::send {Right}
+; ~s & d::send {PgDn}
+; ~s & u::send {PgUp}
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ; mouse keybind 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
-~d & k::mousemove 0, -18, 0, R
-~d & j::MouseMove 0, 18, 0, R
-~d & h::MouseMove -18, 0, 0, R
-~d & l::MouseMove 18, 0, 0, R
-~d & u::MouseClick
-~d & i::MouseClick, Right
+~Tab & k::mousemove 0, -18, 0, R
+~Tab & j::MouseMove 0, 18, 0, R
+~Tab & h::MouseMove -18, 0, 0, R
+~Tab & l::MouseMove 18, 0, 0, R
+~Tab & u::MouseClick
+~Tab & i::MouseClick, Right
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ; press alone key
@@ -81,13 +81,13 @@ If Variable= 0
 Else if Variable != 0
   send #2
 return
+~!/::send #3
 !;::
 if WinExist("ahk_class Emacs")
-  send #3
+  send #4
 Else if Variable != 0
   Run, "C:\tools\emacs\bin\emacsclientw.exe" -c -n
 return
-~!/::send #4
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ; specify tools keybind
@@ -127,7 +127,7 @@ KeyWait, Control
 return
 ~Control Up::
 If (A_PriorHotKey = "~Control" AND A_TimeSincePriorHotkey < 200)
-  Send, ^g{Escape}
+  Send, {Escape}{Escape}{Escape}
 else
   Send, {Control Up}
 return
@@ -162,7 +162,7 @@ return
 !q::Send {Space}qz
 
 #IfWinActive, ahk_class Chrome_WidgetWin_1
-^h::send !{Left}
+
 ^l::send !{Right}
-!l::send ^{TAB}
-!h::send ^+{TAB}
+!l::send ^{PgDn}
+!h::send ^{PgUp}

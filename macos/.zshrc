@@ -131,6 +131,6 @@ export EDITOR='emacsclient -t -c'
 export NVM_DIR="/Users/f0x/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
 
-eval "$(pyenv init -)"
+# eval "$(pyenv init -)"
 
 export HOMEBREW_GITHUB_API_TOKEN="fe9efc97e16d5768a24ac34b2410d5895aa8c14d"
