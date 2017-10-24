@@ -1,0 +1,80 @@
+|   15 |   |   |   |   |
+|   45 |   |   |   |   |
+|   27 |   |   |   |   |
+|   68 |   |   |   |   |
+|  122 |   |   |   |   |
+|   10 |   |   |   |   |
+|   14 |   |   |   |   |
+|   33 |   |   |   |   |
+|   10 |   |   |   |   |
+|   10 |   |   |   |   |
+|   62 |   |   |   |   |
+|   19 |   |   |   |   |
+|   29 |   |   |   |   |
+|   29 |   |   |   |   |
+|   27 |   |   |   |   |
+|   45 |   |   |   |   |
+|  105 |   |   |   |   |
+|  111 |   |   |   |   |
+|  222 |   |   |   |   |
+|    7 |   |   |   |   |
+|  106 |   |   |   |   |
+|------+---+---+---+---|
+| 1116 | 0 | 0 | 0 | 0 |
+#+TBLFM: @22=@1+@2
+#+TBLFM: @22$1='(+ @1$1..@21$1);N
+
+| test | xxx | ttt |
+|------+-----+-----|
+|      |     |     |
+|------+-----+-----|
+
+
+
+#+PLOT: title:"Citas" ind:1 deps:(3) type:2d with:histograms set:"yrange [0:]" file:"./plot.png"
+| Sede      | Max cites | H-index |
+| Chile     |    257.72 |   21.39 |
+| Leeds     |    165.77 |   19.68 |
+| Sao Paolo |     71.00 |   11.50 |
+| Stockholm |    134.19 |   14.33 |
+| Morelia   |    257.56 |   17.67 |
+
+#+BEGIN_SRC python
+  print "test\n";
+#+END_SRC
+
+| 吃饭 |  过路费 | 油钱 |   total |      evan | f0x&rabbit |
+|   96 | 1116.75 |  200 |         |           |            |
+|   29 |         |  255 |         |           |            |
+|   73 |         |  280 |         |           |            |
+|   93 |         |  140 |         |           |            |
+|   71 |         |  292 |         |           |            |
+|   59 |         |  245 |         |           |            |
+|  124 |         |  140 |         |           |            |
+|  111 |         |  235 |         |           |            |
+|      |         |  270 |         |           |            |
+|      |         |  220 |         |           |            |
+|------+---------+------+---------+-----------+------------|
+|  656 | 1116.75 | 2277 | 4049.75 | 1349.9167 |  7018.4933 |
+#+TBLFM: @12='(+ @2..@11);N
+#+TBLFM: @12$4='(+ @12$1..@12$3);N
+#+TBLFM: @12$5=@12$4/3;N
+#+TBLFM: @12$6=@12$4*2/3+1318.66+2000+1000;N
+
+* 产品信息
+
+* 活动通知
+
+* 书签
+
+* 浏览历史
+
+
+nb-appliance:/home/maintenance # rpm -qf /opt/NBUAppliance/bin/perl
+SYMCnbapp-2.7.2-6776520160413043311.x86_64
+nb-appliance:/home/maintenance # rpm -qf /tmp/oldroot/opt/SYMCul
+error: file /tmp/oldroot/opt/SYMCul: No such file or directory
+nb-appliance:/home/maintenance # rpm -qf /opt/SYMCul/bin/vxlogview
+SYMCnbapp-2.7.2-6776520160413043311.x86_64
+nb-appliance:/home/maintenance # rpm -qf /opt/VRTSperl/bin/perl
+VRTSperl-5.16.1.27-RHEL6.3.x86_64
