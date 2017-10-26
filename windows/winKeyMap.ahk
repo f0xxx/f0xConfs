@@ -1,4 +1,10 @@
 ﻿;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+; string replace
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+::xxx::P@ssw0rd
+::sss::/opt/Symantec/sdcssagent/IPS/sisipsoverride.sh || /opt/Symantec/scspagent/IPS/sisipsoverride.sh
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ; gloable key change
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 !c::send ^c
@@ -97,7 +103,7 @@ return
 ; specify tools keybind
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 #IfWinActive, ahk_class Emacs
-Alt::send F9
+Alt::send {F9}
 Alt & m::Send {Space}bp{Space}wv{Space}bn
 Alt & p::Send {Space}pp
 Alt & o::Send {Space}pf
@@ -115,7 +121,7 @@ Control & y::Send {Space}ry
 Control & o::Send {Space}sf
 
 #IfWinActive, ahk_class mintty
-Alt::send F9
+Alt::send {F9}
 Alt & v::send +{Ins}
 Alt & n::send ^bc
 Alt & 1::send ^b1
@@ -134,7 +140,7 @@ Alt & p::Send {Space}pp
 Alt & o::Send {Space}pf
 Alt & f::Send {Space}sp
 Alt & q::Send {Space}qz
-Control::send ^g^g^g
+Control::send ^g
 Control & m::Send {Space}wm
 Control & p::Send {Space}pt
 Control & f::Send {Space}ss
@@ -144,9 +150,10 @@ Control & h::Send {Space}wh
 Control & l::Send {Space}wl
 Control & y::Send {Space}ry
 Control & o::Send {Space}sf
+F4::Send {,}gg
 
 #IfWinActive, ahk_class Chrome_WidgetWin_1
-Alt::send F9
+Alt::send {F9}
 Alt & l::send ^{PgDn}
 Alt & h::send ^{PgUp}
 ; Control::send {Escape}
