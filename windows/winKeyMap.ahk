@@ -135,20 +135,22 @@ Alt & `::send ^b0
 Alt & w::send ^bx
 Alt & m::Send {Space}bp{Space}wv{Space}bn
 Alt & p::Send {Space}pp
-Alt & o::Send {Space}pf
-Alt & f::Send {Space}sp
+Alt & o::Send {Space}pF
+Alt & f::Send {Space}sP
 Alt & q::Send {Space}qz
 Control::send ^g
 Control & m::Send {Space}wm
 Control & p::Send {Space}pt
-Control & f::Send {Space}ss
+Control & f::Send {Space}sB
 Control & s::Send {Space}fs
 Control & n::Send {Space}bN
 Control & h::Send {Space}wh
 Control & l::Send {Space}wl
 Control & y::Send {Space}ry
 Control & o::Send {Space}sf
-F4::Send {,}gg
+F4::Send {,}ggzz
+F1::Send {F1}zz
+F2::Send {F2}zz
 
 #IfWinActive, ahk_class Chrome_WidgetWin_1
 Alt & l::send ^{PgDn}
