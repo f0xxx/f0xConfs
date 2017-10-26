@@ -103,7 +103,6 @@ return
 ; specify tools keybind
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 #IfWinActive, ahk_class Emacs
-Alt::send {F9}
 Alt & m::Send {Space}bp{Space}wv{Space}bn
 Alt & p::Send {Space}pp
 Alt & o::Send {Space}pf
@@ -121,7 +120,6 @@ Control & y::Send {Space}ry
 Control & o::Send {Space}sf
 
 #IfWinActive, ahk_class mintty
-Alt::send {F9}
 Alt & v::send +{Ins}
 Alt & n::send ^bc
 Alt & 1::send ^b1
@@ -153,7 +151,6 @@ Control & o::Send {Space}sf
 F4::Send {,}gg
 
 #IfWinActive, ahk_class Chrome_WidgetWin_1
-Alt::send {F9}
 Alt & l::send ^{PgDn}
 Alt & h::send ^{PgUp}
 ; Control::send {Escape}
