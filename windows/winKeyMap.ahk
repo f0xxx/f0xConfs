@@ -19,22 +19,22 @@
 !9::send ^9
 !q::send !{F4}
 
-; ~Tab & j::send {Down}
-; ~Tab & k::send {Up}
-; ~Tab & h::send {Left}
-; ~Tab & l::send {Right}
-; ~Tab & d::send {PgDn}
-; ~Tab & u::send {PgUp}
+~Tab & j::send {Down}
+~Tab & k::send {Up}
+~Tab & h::send {Left}
+~Tab & l::send {Right}
+~Tab & d::send {PgDn}
+~Tab & u::send {PgUp}
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ; mouse keybind 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
-~Tab & k::mousemove 0, -18, 0, R
-~Tab & j::MouseMove 0, 18, 0, R
-~Tab & h::MouseMove -18, 0, 0, R
-~Tab & l::MouseMove 18, 0, 0, R
-~Tab & u::MouseClick
-~Tab & i::MouseClick, Right
+~Tab & Up::mousemove 0, -18, 0, R
+~Tab & Down::MouseMove 0, 18, 0, R
+~Tab & Left::MouseMove -18, 0, 0, R
+~Tab & Right::MouseMove 18, 0, 0, R
+~Tab & Enter::MouseClick
+~Tab & Space::MouseClick, Right
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ; press alone key
@@ -72,96 +72,135 @@ return
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ; run tools key
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
-~!e::send #1
+~!e::
+if WinExist("ahk_exe chrome.exe")
+  WinActivate, ahk_exe chrome.exe
+else
+  Run, chrome.exe
+return
+
 !r::
-Process, Exist, mintty.exe
-Variable= Errorlevel
-If Variable= 0 
+if WinExist("ahk_exe mintty.exe")
+  WinActivate, ahk_exe mintty.exe
+else
   Run, C:\tools\cygwin64\bin\mintty.exe -i /Cygwin-Terminal.ico -w full -
-Else if Variable != 0
-  send #2
 return
-!;::
-if WinExist("ahk_class Emacs")
-  send #3
-Else if Variable != 0
-  Run, "C:\tools\emacs\bin\emacsclientw.exe" -c -n
+
+~!/::
+if WinExist("ahk_exe TOTALCMD.exe")
+  WinActivate, ahk_exe TOTALCMD.exe
+else
+  Run, C:\tools\totalcmd32\TOTALCMD.EXE
 return
-~!/::send #4
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ; specify tools keybind
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 #IfWinActive, ahk_class Emacs
-~Control::
-KeyWait, Control
-return
-~Control Up::
-If (A_PriorHotKey = "~Control" AND A_TimeSincePriorHotkey < 200)
-  Send, ^g{Escape}
-else
-  Send, {Control Up}
-return
-; ^q::Send {Space}bd
-^m::Send {Space}wm
-!m::Send {Space}bp{Space}wv{Space}bn
-^p::Send {Space}pt
-!p::Send {Space}pp
-!o::Send {Space}pf
-!f::Send {Space}sp
-^f::Send {Space}ss
-^s::Send {Space}fs
-^n::Send {Space}bN
-; !j::Send {Space}wj
-; !k::Send {Space}wk
-^h::Send {Space}wh
-^l::Send {Space}wl
-^+v::Send {Space}ry
-^+f::Send {Space}sf
-!q::Send {Space}qz
-!Enter::Send {Space}TF
+Alt::send F9
+Alt & m::Send {Space}bp{Space}wv{Space}bn
+Alt & p::Send {Space}pp
+Alt & o::Send {Space}pf
+Alt & f::Send {Space}sp
+Alt & q::Send {Space}qz
+Control::send ^g
+Control & m::Send {Space}wm
+Control & p::Send {Space}pt
+Control & f::Send {Space}ss
+Control & s::Send {Space}fs
+Control & n::Send {Space}bN
+Control & h::Send {Space}wh
+Control & l::Send {Space}wl
+Control & y::Send {Space}ry
+Control & o::Send {Space}sf
 
 #IfWinActive, ahk_class mintty
-~Control::
-KeyWait, Control
-return
-~Control Up::
-If (A_PriorHotKey = "~Control" AND A_TimeSincePriorHotkey < 200)
-  Send, ^g{Escape}
-else
-  Send, {Control Up}
-return
-!v::send +{Ins}
-!n::send ^bc
-!1::send ^b1
-!2::send ^b2
-!3::send ^b3
-!4::send ^b4
-!5::send ^b5
-!6::send ^b6
-!7::send ^b7
-!l::send ^b8
-!h::send ^b9
-!`::send ^b0
-!w::send ^bx
-^m::Send {Space}wm
-!m::Send {Space}bp{Space}wv{Space}bn
-^p::Send {Space}pt
-!p::Send {Space}pp
-!o::Send {Space}pf
-!f::Send {Space}sp
-^f::Send {Space}ss
-^s::Send {Space}fs
-^n::Send {Space}bN
-; !j::Send {Space}wj
-; !k::Send {Space}wk
-^h::Send {Space}wh
-^l::Send {Space}wl
-^+v::Send {Space}ry
-^+f::Send {Space}sf
-!q::Send {Space}qz
+Alt::send F9
+Alt & v::send +{Ins}
+Alt & n::send ^bc
+Alt & 1::send ^b1
+Alt & 2::send ^b2
+Alt & 3::send ^b3
+Alt & 4::send ^b4
+Alt & 5::send ^b5
+Alt & 6::send ^b6
+Alt & 7::send ^b7
+Alt & l::send ^b8
+Alt & h::send ^b9
+Alt & `::send ^b0
+Alt & w::send ^bx
+Alt & m::Send {Space}bp{Space}wv{Space}bn
+Alt & p::Send {Space}pp
+Alt & o::Send {Space}pf
+Alt & f::Send {Space}sp
+Alt & q::Send {Space}qz
+Control::send ^g^g^g
+Control & m::Send {Space}wm
+Control & p::Send {Space}pt
+Control & f::Send {Space}ss
+Control & s::Send {Space}fs
+Control & n::Send {Space}bN
+Control & h::Send {Space}wh
+Control & l::Send {Space}wl
+Control & y::Send {Space}ry
+Control & o::Send {Space}sf
 
 #IfWinActive, ahk_class Chrome_WidgetWin_1
-^l::send ^k
-!l::send ^{TAB}
-!h::send ^+{TAB}
+Alt::send F9
+Alt & l::send ^{PgDn}
+Alt & h::send ^{PgUp}
+; Control::send {Escape}
+Control & l::send !{Right}
+Control & h::send !{Left}
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+; others
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+; Shift::send F11
+; Shift & `::send ~
+; Shift & 1::send !
+; Shift & 2::send @
+; Shift & 3::send #
+; Shift & 4::send $
+; ; Shift & 5::send %
+; Shift & 6::send ^
+; Shift & 7::send &
+; Shift & 8::send *
+; Shift & 9::send (
+; Shift & 0::send )
+; Shift & -::send _
+; Shift & =::send +
+; Shift & q::send Q
+; Shift & w::send W
+; Shift & e::send E
+; Shift & r::send R
+; Shift & t::send T
+; Shift & y::send Y
+; Shift & u::send U
+; Shift & i::send I
+; Shift & o::send O
+; Shift & p::send P
+; Shift & [::send {
+; Shift & ]::send }
+; Shift & \::send |
+; Shift & a::send A
+; Shift & s::send S
+; Shift & d::send D
+; Shift & f::send F
+; Shift & g::send G
+; Shift & h::send H
+; Shift & j::send J
+; Shift & k::send K
+; Shift & l::send L
+; ; Shift & ;::send :
+; ; Shift & '::send \"
+; Shift & z::send Z
+; Shift & x::send X
+; Shift & c::send C
+; Shift & v::send V
+; Shift & b::send B
+; Shift & n::send N
+; Shift & m::send M
+; Shift & ,::send <
+; Shift & .::send >
+; Shift & /::send ?
