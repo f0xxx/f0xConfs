@@ -109,7 +109,7 @@ function zle-line-init zle-keymap-select {
     VIMODE="${${KEYMAP/vicmd/[NORMAL]}/(main|viins)/[INSERT]}"
     zle reset-prompt
 }
-zle -N zle-line-init 
+zle -N zle-line-init
 zle -N zle-keymap-select
 RPROMPT='%{$fg_bold[yellow]%}${VIMODE}%{$reset_color%}'
 
