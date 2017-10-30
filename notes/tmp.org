@@ -1,51 +1,63 @@
 * 简历:
-*** 自我评价
-**** chinese
+** 自我评价
+*** chinese
 认真务实,踏实进取,乐于助人,有团队精神,有丰富的工作经验和独立思考独立解决问题的能力,表达沟通能力不错,热爱并喜欢钻研各种技术工具以提高工作效率,不断深入了解计算机,编程是兴趣,个人兴趣还包括阅读,足球,旅游等
-**** english
+*** english
 Pragmatic and enterprising, willing to share experience with others, have team spirit, have rich work experience and independent thinking ability to solve problem, good at communication, love and growing understanding of computer, get a lot of fun in the programming
-*** 项目经验
-**** chinese
+** 项目经验
+*** chinese
+  Vertas  2014.7 – 2017.11
+  专利
+
   索贝数码  2007.11 – 2014.6
+
   Fics 集群系统
   运行环境：linux win 7/8
-  开发工具：zookeeper,gdb,emaces…
+  开发工具和技术：zookeeper,gdb,emaces…
   项目描述：小规模,高性能,可扩展的集群文件系统
   责任描述：负责集群系统中对象存储层的设计和开发,数据一致性,容灾,冗余,扩展,整理.
 
   Fishare 分布式文件系统(san文件系统) 
   运行环境： win XP/2003/7 
-  开发工具： ddk,windbg,softice,vmware,vs2008… 
+  开发工具和技术： ddk,windbg,softice,vmware,vs2008… 
   项目描述：分布式文件系统,主要用于替代stornext组建基于局域网的存储共享系统. 
   责任描述：主要负责其中磁盘层的驱动开发,提供多磁盘管理,多磁盘合并为单卷,磁盘异常处理,磁盘流量控制,提供磁盘测试脚本,磁盘缓存,磁盘独占,磁盘网络接口,磁盘映射工具,磁盘守护服务,磁盘层api等 . 
 
+  Ramdisk 内存虚拟卷驱动 
+  运行环境：win XP/2003/7 
+  开发工具和技术：ddk,windbg, USB-to-Serial,pc,vs2008… 
+  项目描述：利用虚拟技术把PC上的物理内存映射为盘符，提供用户内存级别的超高速数据读写需求，应用于视频采集和播放系统 
+  责任描述：负责相关的驱动和上层应用开发，xp上支持大于4G的内存映射，提供api供第三方程序调用.
+
   流媒体大缓存 
   运行环境：win XP/2003/7 
-  开发工具：pc,vs2008… 
+  开发工具和技术：pc,vs2008… 
   项目描述：支持小数据块大任务并发时网络和磁盘带宽的极限利用(如1000路128kb读写数据) 
   责任描述：负责此缓存模块的独立开发 
-**** english
-  Sobey		2007.11 – 2014.6
- 
-  Fics cluster storage system（2010.11 – 2014.6）
-  environment：linux win 7/8
-  develop tools：zookeeper,gdb,emaces,etc…
-  project description：Small-scale, high-performance, scalable cluster file system
-  project description：Responsible for object storage layer in cluster system ,design and development:data consistency, recovery,redundancy,expansion,etc. 
 
-  Fishare SAN File system（2008.03 - 2010.11）
-  environment：win XP/2003/7
-  develop tools：ddk,windbg,softice,vmware,vs2008,etc…
-  project description：Distributed file system, mainly used to replace stornext, to set up a LAN-based storage sharing system.
-  project description： Primarily responsible to develop virtual driver disk layer, providing multi-disk management, virtual volume, disk exception processing, disk traffic control, test scripts, cache, disk-exclusive, disk network interfaces, disk mapping tool, disk guard services, etc.
- 
-  Streaming large cache
-  environment：win XP/2003/7
-  develop tools：vs2008,etc…
-  project description：maximize disk bandwidth
-  project description： Independent developers responsible for this cache module.
+  华硕科技(苏州)有限公司  2006.7 – 2007.11
 
-*** 专利
+*** english
+ Sobey		2007.11 – 2014.6
+ 
+ Fics cluster storage system（2010.11 – 2014.6）
+ environment：linux win 7/8
+ develop tools：zookeeper,gdb,emaces,etc…
+ project description：Small-scale, high-performance, scalable cluster file system
+ project description：Responsible for object storage layer in cluster system ,design and development:data consistency, recovery,redundancy,expansion,etc. 
+
+ Fishare SAN File system（2008.03 - 2010.11）
+ environment：win XP/2003/7
+ develop tools：ddk,windbg,softice,vmware,vs2008,etc…
+ project description：Distributed file system, mainly used to replace stornext, to set up a LAN-based storage sharing system.
+ project description： Primarily responsible to develop virtual driver disk layer, providing multi-disk management, virtual volume, disk exception processing, disk traffic control, test scripts, cache, disk-exclusive, disk network interfaces, disk mapping tool, disk guard services, etc.
+ 
+ Streaming large cache
+ environment：win XP/2003/7
+ develop tools：vs2008,etc…
+ project description：maximize disk bandwidth
+ project description： Independent developers responsible for this cache module.
+
 
 * org table: 
 |   15 |   |   |   |   |
