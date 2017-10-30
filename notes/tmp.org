@@ -1,3 +1,53 @@
+* 简历:
+*** 自我评价
+**** chinese
+认真务实,踏实进取,乐于助人,有团队精神,有丰富的工作经验和独立思考独立解决问题的能力,表达沟通能力不错,热爱并喜欢钻研各种技术工具以提高工作效率,不断深入了解计算机,编程是兴趣,个人兴趣还包括阅读,足球,旅游等
+**** english
+Pragmatic and enterprising, willing to share experience with others, have team spirit, have rich work experience and independent thinking ability to solve problem, good at communication, love and growing understanding of computer, get a lot of fun in the programming
+*** 项目经验
+**** chinese
+索贝数码  2007.11 – 2014.6
+  Fics 集群系统
+  运行环境：linux win 7/8
+  开发工具：zookeeper,gdb,emaces…
+  项目描述：小规模,高性能,可扩展的集群文件系统
+  责任描述：负责集群系统中对象存储层的设计和开发,数据一致性,容灾,冗余,扩展,整理.
+
+  Fishare 分布式文件系统(san文件系统) 
+  运行环境： win XP/2003/7 
+  开发工具： ddk,windbg,softice,vmware,vs2008… 
+  项目描述：分布式文件系统,主要用于替代stornext组建基于局域网的存储共享系统. 
+  责任描述：主要负责其中磁盘层的驱动开发,提供多磁盘管理,多磁盘合并为单卷,磁盘异常处理,磁盘流量控制,提供磁盘测试脚本,磁盘缓存,磁盘独占,磁盘网络接口,磁盘映射工具,磁盘守护服务,磁盘层api等 . 
+
+  流媒体大缓存 
+  运行环境：win XP/2003/7 
+  开发工具：pc,vs2008… 
+  项目描述：支持小数据块大任务并发时网络和磁盘带宽的极限利用(如1000路128kb读写数据) 
+  责任描述：负责此缓存模块的独立开发 
+**** english
+  Sobey		2007.11 – 2014.6
+ 
+  Fics cluster storage system（2010.11 – 2014.6）
+  environment：linux win 7/8
+  develop tools：zookeeper,gdb,emaces,etc…
+  project description：Small-scale, high-performance, scalable cluster file system
+  project description：Responsible for object storage layer in cluster system ,design and development:data consistency, recovery,redundancy,expansion,etc. 
+
+  Fishare SAN File system（2008.03 - 2010.11）
+  environment：win XP/2003/7
+  develop tools：ddk,windbg,softice,vmware,vs2008,etc…
+  project description：Distributed file system, mainly used to replace stornext, to set up a LAN-based storage sharing system.
+  project description： Primarily responsible to develop virtual driver disk layer, providing multi-disk management, virtual volume, disk exception processing, disk traffic control, test scripts, cache, disk-exclusive, disk network interfaces, disk mapping tool, disk guard services, etc.
+ 
+  Streaming large cache
+  environment：win XP/2003/7
+  develop tools：vs2008,etc…
+  project description：maximize disk bandwidth
+  project description： Independent developers responsible for this cache module.
+
+*** 专利
+
+* org table: 
 |   15 |   |   |   |   |
 |   45 |   |   |   |   |
 |   27 |   |   |   |   |
@@ -61,20 +111,3 @@
 #+TBLFM: @12$5=@12$4/3;N
 #+TBLFM: @12$6=@12$4*2/3+1318.66+2000+1000;N
 
-* 产品信息
-
-* 活动通知
-
-* 书签
-
-* 浏览历史
-
-
-nb-appliance:/home/maintenance # rpm -qf /opt/NBUAppliance/bin/perl
-SYMCnbapp-2.7.2-6776520160413043311.x86_64
-nb-appliance:/home/maintenance # rpm -qf /tmp/oldroot/opt/SYMCul
-error: file /tmp/oldroot/opt/SYMCul: No such file or directory
-nb-appliance:/home/maintenance # rpm -qf /opt/SYMCul/bin/vxlogview
-SYMCnbapp-2.7.2-6776520160413043311.x86_64
-nb-appliance:/home/maintenance # rpm -qf /opt/VRTSperl/bin/perl
-VRTSperl-5.16.1.27-RHEL6.3.x86_64

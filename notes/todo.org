@@ -70,8 +70,12 @@
 **** 钓鱼
 **** 吃货
 ** TODO 各种保险(失业保险 养老保险 医保续保)
-** TODO 找工作(简历)
+** TODO 找工作(简历 做demo)
+*** 自我评价
+*** 项目经验
+*** 专利
 ** TODO 自己做个微博
+** TODO 看牙齿
 * info 1:
 ** dingding:Ihad123
 ** How to format code in Xcode：
