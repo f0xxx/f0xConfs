@@ -6,7 +6,7 @@
 Pragmatic and enterprising, willing to share experience with others, have team spirit, have rich work experience and independent thinking ability to solve problem, good at communication, love and growing understanding of computer, get a lot of fun in the programming
 *** 项目经验
 **** chinese
-索贝数码  2007.11 – 2014.6
+  索贝数码  2007.11 – 2014.6
   Fics 集群系统
   运行环境：linux win 7/8
   开发工具：zookeeper,gdb,emaces…
