@@ -7,6 +7,7 @@
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ; gloable key change
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+!z::send ^z
 !c::send ^c
 !v::send ^v
 !x::send ^x
@@ -158,6 +159,9 @@ Alt & h::send ^{PgUp}
 ; Control::send {Escape}
 Control & l::send !{Right}
 Control & h::send !{Left}
+
+#IfWinActive, ahk_exe WeChat.exe
+Tab::return
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ; others
