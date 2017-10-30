@@ -160,8 +160,8 @@ Alt & h::send ^{PgUp}
 Control & l::send !{Right}
 Control & h::send !{Left}
 
-#IfWinActive, ahk_exe WeChat.exe
-Tab::return
+;#IfWinActive, ahk_exe WeChat.exe
+;Tab::return
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ; others
