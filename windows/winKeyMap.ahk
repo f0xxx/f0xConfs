@@ -97,7 +97,7 @@ return
 if WinExist("ahk_exe TOTALCMD.exe")
   WinActivate, ahk_exe TOTALCMD.exe
 else
-  Run, C:\tools\totalcmd32\TOTALCMD.EXE
+  Run, C:\tools\totalcmd32\TOTALCMD.EXE -w full
 return
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
