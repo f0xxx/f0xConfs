@@ -1,8 +1,10 @@
 * todo main
-** TODO English
+** TODO 英语
+*** TODO 每天背诵两篇
+** TODO 健身
 ** TODO 意识 气 (大唐 简史 五轮书 串联)
 ** TODO 游戏练心 (开启模式:井中月)
-** TODO 人工智能
+** TODO 各种新技术研究(人工智能)
 *** TODO 语音识别系统研究
 * todo list 1:                                                     :todolist:
 ** DONE curl -u "lin.wang1:74c3EuweT1XrSyNoapcKuNU6Fvy65jY/cO8Eli1rcbBH3FDrPDFhEWO4aDv+zbHm5+2da4S7c/mBk77SmGvm3ZajoRV6C+bBnrMT3YngrSw="  -X POST -d '{"title": "test","description": "test","state": "OPEN","open": true,"closed": false,"fromRef": {"id": "refs/heads/APPSOL-62357","repository": {"slug": "nba","name": null,"project": {"key": "AS"}}},"toRef": {"id": "refs/heads/master","repository": {"slug": "nba","name": null,"project": {"key": "AS"}}},"locked": false,"reviewers": [{"user": {"name": "Yu.Wen"}}]}' -H "Content-Type: application/json" https://stash.veritas.com/rest/api/1.0/projects/AS/repos/nba/pull-requests
@@ -34,7 +36,8 @@
    CLOSED: [2017-10-12 四 13:48]
 ** DONE save configuration files to github
    CLOSED: [2017-10-12 四 14:06]
-** TODO add code search in github keybind
+** DONE add code search in github keybind
+   CLOSED: [2017-11-02 Thu 23:19]
 * todo list 2:
 ** DONE 报销
    CLOSED: [2017-07-19 三 16:52]
@@ -54,8 +57,21 @@
    CLOSED: [2017-07-20 四 09:34]
 ** DONE 大西北土特产
    CLOSED: [2017-07-24 一 13:30]
-** TODO 体检
-** TODO 交职称评定材料
+** DONE 体检
+   CLOSED: [2017-11-04 Sat 16:09]
+** DONE 交职称评定材料
+   CLOSED: [2017-11-04 Sat 16:09]
+** DONE 三亚行计划
+   CLOSED: [2017-11-05 Sun 00:14]
+*** 机票比价
+*** 酒店要求
+**** 机场接送
+**** 沙滩
+**** 钓鱼
+**** 吃货
+** TODO 各种保险(失业保险 养老保险 医保续保)
+** TODO 找工作(简历)
+** TODO 自己做个微博
 * info 1:
 ** dingding:Ihad123
 ** How to format code in Xcode：

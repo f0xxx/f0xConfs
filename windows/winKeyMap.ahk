@@ -142,7 +142,7 @@ Alt & q::Send {Space}qz
 Control::send ^g
 Control & m::Send {Space}wm
 Control & p::Send {Space}pt
-Control & f::Send {Space}sB
+Control & f::Send {Space}ss
 Control & s::Send {Space}fs
 Control & n::Send {Space}bN
 Control & h::Send {Space}wh
