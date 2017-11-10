@@ -1,3 +1,5 @@
+* hosts
+** https://raw.githubusercontent.com/lennylxx/ipv6-hosts/master/hosts
 * bash tech:
 ** array
 If you're used to a "standard" *NIX shell you may not be familiar with bash's array feature. Although not as powerful as similar constructs in the P languages (Perl, Python, and PHP) and others, they are often quite useful.
@@ -142,7 +144,7 @@ sudo systemctl get-default
 * debug:
 ** perl -d myscript.pl b /opt/NBUAppliance/scripts/nbu_runcmd.pm:112 a pprint "\n===============================\n";print $cmd;print "\n*******************************\n";print $stdout B*
 ** python -m pdb myscript.py
-* getting the hex codes(iterm2)
-** xxd -psd & just input key
 * spacemacs
 ** change line num format search "linum-format"
+* getting the hex codes(iterm2)
+** xxd -psd & just input key
