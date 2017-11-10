@@ -144,3 +144,5 @@ sudo systemctl get-default
 ** python -m pdb myscript.py
 * getting the hex codes(iterm2)
 ** xxd -psd & just input key
+* spacemacs
+** change line num format search "linum-format"

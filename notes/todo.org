@@ -4,8 +4,9 @@
 ** TODO 健身
 ** TODO 意识 气 (大唐 简史 五轮书 串联)
 ** TODO 游戏练心 (开启模式:井中月)
-** TODO 各种新技术研究(人工智能)
+** TODO 各种新技术研究(人工智能 区块链)
 *** TODO 语音识别系统研究
+*** https://www.ssrc.ucsc.edu/Papers/weil-osdi06.pdf 
 * todo list 1:
 ** TODO 各种保险(失业保险 养老保险 医保续保)
 ** TODO 找工作(简历 做demo)

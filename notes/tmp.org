@@ -1,6 +1,7 @@
 * 简历:
 ** 自我评价
 *** chinese
+  经过多年技术沉淀,从单线程开发到大并发多线开发再到分布式程序设计开发,积累了丰富的设计,编码,调试和解决问题的思路和经验,对于多线程大并发程序的设计和打桩并图形化调优性能,各种调试工具的应用都有比较扎实的技术功底,分布式数据一致性程序的设计编码和调试有比较深入的了解
   认真务实,踏实进取,乐于助人,有团队精神,有丰富的工作经验和独立思考独立解决问题的能力,表达沟通能力不错,热爱并喜欢钻研各种技术工具以提高工作效率,不断深入了解计算机,编程是兴趣,个人兴趣还包括阅读,足球,旅游等
 *** english
 Pragmatic and enterprising, willing to share experience with others, have team spirit, have rich work experience and independent thinking ability to solve problem, good at communication, love and growing understanding of computer, get a lot of fun in the programming
