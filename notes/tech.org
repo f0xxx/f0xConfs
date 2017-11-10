@@ -1,3 +1,32 @@
+* docker
+curl https://registry.hub.docker.com//v1/repositories/ubuntu/tags | python -mjson.tool
+
+docker run -i -t ubuntu:14.04 /bin/bash
+
+docker exec -it tender_shockley bash
+
+docker -dD
+
+docker rmi -f $(docker images -q -a -f dangling=true)
+
+
+sed -i "s%localhost%10.200.78.238%" cmd/registry/config.yml
+curl -v -X GET http://localhost:5000/v2/hello-mine/tags/list
+
+git clone git@cdpzit.com:~/project.git gitgit
+2.6 打包镜像
+docker save debian02 >/root/debian02.tar   #debian02镜像打包
+
+2.7 在另外的机器上导入镜像
+docker load < debian02.tar   #导入镜像
+docker images   #查看存在的镜像
+
+➜  ~  docker-machine env default
+export DOCKER_TLS_VERIFY="1"
+export DOCKER_HOST="tcp://192.168.99.100:2376"
+export DOCKER_CERT_PATH="/Users/f0x/.docker/machine/machines/default"
+export DOCKER_MACHINE_NAME="default"
+
 * hosts
 ** https://raw.githubusercontent.com/lennylxx/ipv6-hosts/master/hosts
 * bash tech:

@@ -5,15 +5,6 @@
 ** TODO 游戏练心 (开启模式:井中月)
 ** TODO 各种新技术研究(人工智能 区块链)
 * todo list 1:
-** DONE node精准推送
-   CLOSED: [2017-12-09 六 15:54]
-** TODO 自己做个微博
-** TODO 看牙齿
-** TODO 各种保险(失业保险 养老保险 医保续保)
-** TODO 找工作(简历 做demo)
-*** 自我评价
-*** 项目经验
-*** 专利
 ** DONE 报销
    CLOSED: [2017-07-19 三 16:52]
 *** DONE phone charge
@@ -44,6 +35,15 @@
 **** 沙滩
 **** 钓鱼
 **** 吃货
+** DONE node精准推送
+   CLOSED: [2017-12-09 六 15:54]
+** TODO 自己做个微博
+** TODO 看牙齿
+** TODO 各种保险(失业保险 养老保险 医保续保)
+** TODO 找工作(简历 做demo)
+*** 自我评价
+*** 项目经验
+*** 专利
 * todo list 2:                                                     :todolist:
 ** DONE curl -u "lin.wang1:74c3EuweT1XrSyNoapcKuNU6Fvy65jY/cO8Eli1rcbBH3FDrPDFhEWO4aDv+zbHm5+2da4S7c/mBk77SmGvm3ZajoRV6C+bBnrMT3YngrSw="  -X POST -d '{"title": "test","description": "test","state": "OPEN","open": true,"closed": false,"fromRef": {"id": "refs/heads/APPSOL-62357","repository": {"slug": "nba","name": null,"project": {"key": "AS"}}},"toRef": {"id": "refs/heads/master","repository": {"slug": "nba","name": null,"project": {"key": "AS"}}},"locked": false,"reviewers": [{"user": {"name": "Yu.Wen"}}]}' -H "Content-Type: application/json" https://stash.veritas.com/rest/api/1.0/projects/AS/repos/nba/pull-requests
    CLOSED: [2017-06-14 三 18:13]
@@ -124,3 +124,6 @@
  nb-appliance.Network> DNS Domain cdc.veritas.com
  - [Info] Successfully updated the configuration
  nb-appliance.Network> Hostname Set i27-eng138
+* ZenDi:
+** docker run -it --rm --name pro0 -p 8888:80 -v "$PWD":/usr/src/ -w /usr/src/app node node app.js
+** curl -H 'Content-Type: application/json' -X POST -d '{"pushInfo":[{"科室":"检验科","项目":"肝功能","指标":"总胆红素","异常值":"异常高"}]}' http://120.79.56.16/api/getPushInfo
