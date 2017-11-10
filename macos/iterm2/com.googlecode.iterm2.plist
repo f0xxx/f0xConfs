@@ -349,14 +349,14 @@
 			<key>Text</key>
 			<string>0x20 0x2a</string>
 		</dict>
-		<key>0x68-0x40000</key>
+		<key>0x68-0x100000</key>
 		<dict>
 			<key>Action</key>
 			<integer>11</integer>
 			<key>Text</key>
 			<string>0x02 0x39</string>
 		</dict>
-		<key>0x6c-0x40000</key>
+		<key>0x6c-0x100000</key>
 		<dict>
 			<key>Action</key>
 			<integer>11</integer>
@@ -528,7 +528,7 @@ Close</string>
 	<key>NSFontPanelAttributes</key>
 	<string>1, 0</string>
 	<key>NSNavLastRootDirectory</key>
-	<string>~/tools/scripts</string>
+	<string>~/tools/f0xConfs/macos/iterm2</string>
 	<key>NSNavPanelExpandedSizeForOpenMode</key>
 	<string>{712, 448}</string>
 	<key>NSNavPanelExpandedSizeForSaveMode</key>
@@ -589,7 +589,7 @@ Close</string>
 	<key>NSWindow Frame SessionsPreferences</key>
 	<string>833 557 606 469 0 0 1680 1028 </string>
 	<key>NSWindow Frame SharedPreferences</key>
-	<string>575 499 958 451 0 0 1680 1028 </string>
+	<string>575 423 1016 512 0 0 1680 1028 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
 	<string>0 0 1680 1028 0 0 1680 1028 </string>
 	<key>NSWindow Frame iTerm Window 1</key>
@@ -1020,28 +1020,14 @@ Close</string>
 					<key>Text</key>
 					<string> sB</string>
 				</dict>
-				<key>0x68-0x100000</key>
+				<key>0x68-0x40000</key>
 				<dict>
 					<key>Action</key>
 					<integer>12</integer>
 					<key>Text</key>
 					<string> wh</string>
 				</dict>
-				<key>0x6a-0x100000</key>
-				<dict>
-					<key>Action</key>
-					<integer>12</integer>
-					<key>Text</key>
-					<string> wj</string>
-				</dict>
-				<key>0x6b-0x100000</key>
-				<dict>
-					<key>Action</key>
-					<integer>12</integer>
-					<key>Text</key>
-					<string> wk</string>
-				</dict>
-				<key>0x6c-0x100000</key>
+				<key>0x6c-0x40000</key>
 				<dict>
 					<key>Action</key>
 					<integer>12</integer>
@@ -1188,12 +1174,26 @@ Close</string>
 					<key>Text</key>
 					<string>[1;6C</string>
 				</dict>
+				<key>0xf704-0x0</key>
+				<dict>
+					<key>Action</key>
+					<integer>12</integer>
+					<key>Text</key>
+					<string>,gp</string>
+				</dict>
 				<key>0xf704-0x20000</key>
 				<dict>
 					<key>Action</key>
 					<integer>10</integer>
 					<key>Text</key>
 					<string>[1;2P</string>
+				</dict>
+				<key>0xf705-0x0</key>
+				<dict>
+					<key>Action</key>
+					<integer>12</integer>
+					<key>Text</key>
+					<string>,gn</string>
 				</dict>
 				<key>0xf705-0x20000</key>
 				<dict>
@@ -1208,6 +1208,13 @@ Close</string>
 					<integer>10</integer>
 					<key>Text</key>
 					<string>[1;2R</string>
+				</dict>
+				<key>0xf707-0x0</key>
+				<dict>
+					<key>Action</key>
+					<integer>12</integer>
+					<key>Text</key>
+					<string>,gg</string>
 				</dict>
 				<key>0xf707-0x20000</key>
 				<dict>
@@ -10589,7 +10596,7 @@ Close</string>
 		</dict>
 	</dict>
 	<key>PrefsCustomFolder</key>
-	<string>/Users/f0x/tools/conf/iterm2</string>
+	<string>/Users/f0x/tools/f0xConfs/macos/iterm2</string>
 	<key>Print In Black And White</key>
 	<true/>
 	<key>PromptOnQuit</key>
@@ -10615,7 +10622,7 @@ Close</string>
 	<key>SUHasLaunchedBefore</key>
 	<true/>
 	<key>SULastCheckTime</key>
-	<date>2017-10-16T07:38:17Z</date>
+	<date>2017-11-10T07:28:47Z</date>
 	<key>SavePasteHistory</key>
 	<false/>
 	<key>Secure Input</key>
