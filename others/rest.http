@@ -10,6 +10,14 @@ content-type: application/json
     "time": "Wed, 21 Oct 2015 18:27:50 GMT"
 }
 
+### getPushInfo POST
+POST http://120.79.56.16/api/getPushInfo
+content-type: application/json
+
+{
+  "pushInfo":[{"科室":"检验科","项目":"肝功能","指标":"总胆红素","异常值":"异常高"}]
+}
+
 ### install iso ### 
 GET http://10.220.142.150/cgi-bin/xgeo/configiso.pl?site=CD-B5214&model=5220&hosttype=HARDWARE&hostname=i27-eng138&isotype=2.6.1.1&iso=NB-2.6.1.1-20150219.iso&email=lin.wang1@veritas.com
 ###
