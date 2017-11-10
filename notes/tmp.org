@@ -1,65 +1,85 @@
 * 简历:
 ** 自我评价
 *** chinese
-认真务实,踏实进取,乐于助人,有团队精神,有丰富的工作经验和独立思考独立解决问题的能力,表达沟通能力不错,热爱并喜欢钻研各种技术工具以提高工作效率,不断深入了解计算机,编程是兴趣,个人兴趣还包括阅读,足球,旅游等
+  认真务实,踏实进取,乐于助人,有团队精神,有丰富的工作经验和独立思考独立解决问题的能力,表达沟通能力不错,热爱并喜欢钻研各种技术工具以提高工作效率,不断深入了解计算机,编程是兴趣,个人兴趣还包括阅读,足球,旅游等
 *** english
 Pragmatic and enterprising, willing to share experience with others, have team spirit, have rich work experience and independent thinking ability to solve problem, good at communication, love and growing understanding of computer, get a lot of fun in the programming
 ** 项目经验
 *** chinese
   Vertas  2014.7 – 2017.11
-  专利
+
+  Appliance存储一体机
+  运行环境：linux
+  开发工具和技术：bash,perl,python,emacs,git,perforce,jira,jenkins,strace…
+  项目描述：负责存储一体机Appliance的升级框架重构,开发,维护和调优
+  责任描述：主导升级框架重构,抛弃拆分raid的升级保护方式(有风险且十分耗时),在redhat不支持的情况下,实现os由suse切换到redhat过程中lvm上的硬盘安装方式升级,并因此技术难点突破获取专利(A Method to Support Hard Drive Installation of Linux from LVM Partition on Appliance)
 
   索贝数码  2007.11 – 2014.6
 
   Fics 集群系统
   运行环境：linux win 7/8
-  开发工具和技术：zookeeper,gdb,emaces…
+  开发工具和技术：zookeeper,gdb,emaces,ceph,c/c++,python…
   项目描述：小规模,高性能,可扩展的集群文件系统
-  责任描述：负责集群系统中对象存储层的设计和开发,数据一致性,容灾,冗余,扩展,整理.
+  责任描述：负责集群系统中对象存储层的设计和开发,数据一致性,容灾,冗余,扩展,整理
 
-  Fishare 分布式文件系统(san文件系统) 
-  运行环境： win XP/2003/7 
-  开发工具和技术： ddk,windbg,softice,vmware,vs2008… 
-  项目描述：分布式文件系统,主要用于替代stornext组建基于局域网的存储共享系统. 
-  责任描述：主要负责其中磁盘层的驱动开发,提供多磁盘管理,多磁盘合并为单卷,磁盘异常处理,磁盘流量控制,提供磁盘测试脚本,磁盘缓存,磁盘独占,磁盘网络接口,磁盘映射工具,磁盘守护服务,磁盘层api等 . 
+  Fishare 分布式文件系统(san文件系统)
+  运行环境： win XP/2003/7
+  开发工具和技术：ddk,windbg,softice,vmware,vs2008,c/c++,python…
+  项目描述：分布式文件系统,主要用于替代stornext组建基于局域网的存储共享系统.
+  责任描述：主要负责其中磁盘层的驱动开发,提供多磁盘管理,多磁盘合并为单卷,磁盘异常处理,磁盘流量控制,提供磁盘测试脚本,磁盘缓存,磁盘独占,磁盘网络接口,磁盘映射工具,磁盘守护服务,磁盘层api等
 
-  Ramdisk 内存虚拟卷驱动 
-  运行环境：win XP/2003/7 
-  开发工具和技术：ddk,windbg, USB-to-Serial,pc,vs2008… 
-  项目描述：利用虚拟技术把PC上的物理内存映射为盘符，提供用户内存级别的超高速数据读写需求，应用于视频采集和播放系统 
-  责任描述：负责相关的驱动和上层应用开发，xp上支持大于4G的内存映射，提供api供第三方程序调用.
+  Ramdisk 内存虚拟卷驱动
+  运行环境：win XP/2003/7
+  开发工具和技术：ddk,windbg,USB-to-Serial,pc,vs2008…
+  项目描述：利用虚拟技术把PC上的物理内存映射为盘符，提供用户内存级别的超高速数据读写需求，应用于视频采集和播放系统
+  责任描述：负责相关的驱动和上层应用开发，xp上支持大于4G的内存映射，提供api供第三方程序调用
 
-  流媒体大缓存 
-  运行环境：win XP/2003/7 
-  开发工具和技术：pc,vs2008… 
-  项目描述：支持小数据块大任务并发时网络和磁盘带宽的极限利用(如1000路128kb读写数据) 
-  责任描述：负责此缓存模块的独立开发 
+  流媒体大缓存
+  运行环境：win XP/2003/7
+  开发工具和技术：网络监控,vs2008,c/c++,python…
+  项目描述：支持小数据块大任务并发时网络和磁盘带宽的极限利用(如1000路128kb读写数据)
+  责任描述：负责此缓存模块的独立开发,调试,交付
 
   华硕科技(苏州)有限公司  2006.7 – 2007.11
 
+  智能手机应用和PC端服务应用开发
+  运行环境：win mobile
+  开发工具和技术：vs2005,c/c++…
+  项目描述：为华硕手机开发特定的手势应用,在pc端开发独立应用支持手机数据交换,铃声配置等功能
+  责任描述：负责独立开发调试上述功能并在规定时间内实现应用交付
+
 *** english
  Sobey		2007.11 – 2014.6
- 
+
  Fics cluster storage system（2010.11 – 2014.6）
  environment：linux win 7/8
  develop tools：zookeeper,gdb,emaces,etc…
  project description：Small-scale, high-performance, scalable cluster file system
- project description：Responsible for object storage layer in cluster system ,design and development:data consistency, recovery,redundancy,expansion,etc. 
+ project description：Responsible for object storage layer in cluster system ,design and development:data consistency, recovery,redundancy,expansion,etc.
 
  Fishare SAN File system（2008.03 - 2010.11）
  environment：win XP/2003/7
  develop tools：ddk,windbg,softice,vmware,vs2008,etc…
  project description：Distributed file system, mainly used to replace stornext, to set up a LAN-based storage sharing system.
  project description： Primarily responsible to develop virtual driver disk layer, providing multi-disk management, virtual volume, disk exception processing, disk traffic control, test scripts, cache, disk-exclusive, disk network interfaces, disk mapping tool, disk guard services, etc.
- 
+
  Streaming large cache
  environment：win XP/2003/7
  develop tools：vs2008,etc…
  project description：maximize disk bandwidth
  project description： Independent developers responsible for this cache module.
 
+** 个人经验(由于感兴趣工作之余的一些精力花在了其他技术上,按时间排序)
+*** chinese
+  个人博客ruby on rails (正在进行中)
+  人工智能tensorflow (正在进行中)
+  区块链izqui/blockchain: A blockchain implementation using golang
+  ios应用swift2
+  钉钉应用react
+  后端开发spring boot+mysql+hibernate+docker
+  移动小游戏coco2dx
 
-* org table: 
+* org table:
 |   15 |   |   |   |   |
 |   45 |   |   |   |   |
 |   27 |   |   |   |   |
@@ -122,4 +142,3 @@ Pragmatic and enterprising, willing to share experience with others, have team s
 #+TBLFM: @12$4='(+ @12$1..@12$3);N
 #+TBLFM: @12$5=@12$4/3;N
 #+TBLFM: @12$6=@12$4*2/3+1318.66+2000+1000;N
-

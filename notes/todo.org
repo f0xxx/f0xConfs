@@ -6,7 +6,45 @@
 ** TODO 游戏练心 (开启模式:井中月)
 ** TODO 各种新技术研究(人工智能)
 *** TODO 语音识别系统研究
-* todo list 1:                                                     :todolist:
+* todo list 1:
+** TODO 各种保险(失业保险 养老保险 医保续保)
+** TODO 找工作(简历 做demo)
+*** 自我评价
+*** 项目经验
+*** 专利
+** TODO 自己做个微博
+** TODO 看牙齿
+** DONE 报销
+   CLOSED: [2017-07-19 三 16:52]
+*** DONE phone charge
+    CLOSED: [2016-12-27 二 15:40]
+*** DONE medical Charge
+    CLOSED: [2016-12-29 Thu 15:44]
+*** DONE glass Charge
+    CLOSED: [2017-06-13 二 17:56]
+** DONE 车位合同
+   CLOSED: [2017-06-13 二 17:50]
+** DONE 公积金
+   CLOSED: [2017-07-25 二 10:47]
+** DONE clean car
+   CLOSED: [2017-07-25 二 09:20]
+** DONE clean charge
+   CLOSED: [2017-07-20 四 09:34]
+** DONE 大西北土特产
+   CLOSED: [2017-07-24 一 13:30]
+** DONE 体检
+   CLOSED: [2017-11-04 Sat 16:09]
+** DONE 交职称评定材料
+   CLOSED: [2017-11-04 Sat 16:09]
+** DONE 三亚行计划
+   CLOSED: [2017-11-05 Sun 00:14]
+*** 机票比价
+*** 酒店要求
+**** 机场接送
+**** 沙滩
+**** 钓鱼
+**** 吃货
+* todo list 2:                                                     :todolist:
 ** DONE curl -u "lin.wang1:74c3EuweT1XrSyNoapcKuNU6Fvy65jY/cO8Eli1rcbBH3FDrPDFhEWO4aDv+zbHm5+2da4S7c/mBk77SmGvm3ZajoRV6C+bBnrMT3YngrSw="  -X POST -d '{"title": "test","description": "test","state": "OPEN","open": true,"closed": false,"fromRef": {"id": "refs/heads/APPSOL-62357","repository": {"slug": "nba","name": null,"project": {"key": "AS"}}},"toRef": {"id": "refs/heads/master","repository": {"slug": "nba","name": null,"project": {"key": "AS"}}},"locked": false,"reviewers": [{"user": {"name": "Yu.Wen"}}]}' -H "Content-Type: application/json" https://stash.veritas.com/rest/api/1.0/projects/AS/repos/nba/pull-requests
    CLOSED: [2017-06-14 三 18:13]
 
@@ -38,44 +76,6 @@
    CLOSED: [2017-10-12 四 14:06]
 ** DONE add code search in github keybind
    CLOSED: [2017-11-02 Thu 23:19]
-* todo list 2:
-** DONE 报销
-   CLOSED: [2017-07-19 三 16:52]
-*** DONE phone charge
-    CLOSED: [2016-12-27 二 15:40]
-*** DONE medical Charge
-    CLOSED: [2016-12-29 Thu 15:44]
-*** DONE glass Charge
-    CLOSED: [2017-06-13 二 17:56]
-** DONE 车位合同
-   CLOSED: [2017-06-13 二 17:50]
-** DONE 公积金
-   CLOSED: [2017-07-25 二 10:47]
-** DONE clean car
-   CLOSED: [2017-07-25 二 09:20]
-** DONE clean charge
-   CLOSED: [2017-07-20 四 09:34]
-** DONE 大西北土特产
-   CLOSED: [2017-07-24 一 13:30]
-** DONE 体检
-   CLOSED: [2017-11-04 Sat 16:09]
-** DONE 交职称评定材料
-   CLOSED: [2017-11-04 Sat 16:09]
-** DONE 三亚行计划
-   CLOSED: [2017-11-05 Sun 00:14]
-*** 机票比价
-*** 酒店要求
-**** 机场接送
-**** 沙滩
-**** 钓鱼
-**** 吃货
-** TODO 各种保险(失业保险 养老保险 医保续保)
-** TODO 找工作(简历 做demo)
-*** 自我评价
-*** 项目经验
-*** 专利
-** TODO 自己做个微博
-** TODO 看牙齿
 * info 1:
 ** dingding:Ihad123
 ** How to format code in Xcode：
