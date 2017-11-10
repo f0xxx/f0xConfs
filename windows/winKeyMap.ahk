@@ -149,9 +149,9 @@ Control & h::Send {Space}wh
 Control & l::Send {Space}wl
 Control & y::Send {Space}ry
 Control & o::Send {Space}sf
-F4::Send {,}ggzz
-F1::Send {F1}zz
-F2::Send {F2}zz
+F4::Send {,}gg
+F1::Send {,}gp
+F2::Send {,}gn
 
 #IfWinActive, ahk_class Chrome_WidgetWin_1
 Alt & l::send ^{PgDn}
