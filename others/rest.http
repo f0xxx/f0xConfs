@@ -10,7 +10,7 @@ content-type: application/json
     "time": "Wed, 21 Oct 2015 18:27:50 GMT"
 }
 
-### sample POST
+### getPushInfo POST
 POST http://120.79.56.16/api/getPushInfo
 content-type: application/json
 
