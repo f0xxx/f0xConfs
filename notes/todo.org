@@ -127,3 +127,4 @@
 * ZenDi:
 ** docker run -it --rm --name pro0 -p 8888:80 -v "$PWD":/usr/src/ -w /usr/src/app node node app.js
 ** curl -H 'Content-Type: application/json' -X POST -d '{"pushInfo":[{"科室":"检验科","项目":"肝功能","指标":"总胆红素","异常值":"异常高"}]}' http://120.79.56.16/api/getPushInfo
+** todo...
