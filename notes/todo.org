@@ -1,11 +1,13 @@
-* todo main
-** TODO 英语
-** TODO 健身
-** TODO 意识 气 (大唐 简史 五轮书 串联)
-** TODO 游戏练心 (开启模式:井中月)
+* todo main:
+** TODO 英语(1,3,5)
+** TODO 健身(2,4,6)
+** TODO 意识 气(大唐 简史 五轮书 串联)
+** TODO 游戏练心(开启模式:井中月)
 ** TODO 各种新技术研究(人工智能 区块链)
+
 * todo list 1:
-** TODO 自己做个微博
+** TODO 面试费用报销
+** TODO 自己做个博客&公众号
 ** TODO 看牙齿
 ** TODO 各种保险(失业保险 养老保险 医保续保)
 ** TODO 找工作(简历 做demo)
@@ -115,7 +117,10 @@
    微信号：fb4986334
 ** Hide finder
 *** Reboot your Mac into Recovery Mode by restarting your computer and holding down Command+R until the Apple logo appears on your screen.
-*** Click Utilities > Terminal. In the Terminal window, type in csrutil disable and press Enter.
+*** edit /Volumes/Macintosh HD/System/Library/CoreServices/Finder.app/Contents/Info.plist
+**** Add the following strings near the top of the plist file but under “<dict>”:
+***** <key>NSUIElement</key>
+***** <string>1</string>
 *** Restart your Mac.
 * job info:
 ** appliance dns setting

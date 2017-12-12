@@ -7,6 +7,8 @@
 *** 评论
 **** 机器评论
 **** 人工灌水
+**** 有价值评论
+**** others
 ** 价值信息
 *** 知识价值
 *** 娱乐价值
@@ -98,3 +100,27 @@
 18. 技术和应用科学
 第四组：其他语言类
 19. 外语资料
+** 小规模集群文件系统
+*** 客户端提供标准posix文件系统接口
+**** fuse map meta command to user spaces(below command)
+**** meta cache
+***** meta hash cache for index osd node directly to speed up directory search
+**** data cache sync disk
+***** raid|ssd disk?
+**** createfile
+**** openfile
+**** renamefile
+**** readfile
+**** writefile
+**** deletefile
+*** 服务器提供集群的文件元数据和数据分离的管理方式
+*** 对象存储结合本地文件系统
+**** 对象存储数据一致性
+**** 本地文件系统分布数据分布
+*** 对象节点管理
+**** 故障检测以及状态更新
+**** 故障状态变化
+**** 扩容
+** san文件系统
+** 块设备管理
+** 缓存的设计

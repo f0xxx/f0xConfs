@@ -1,3 +1,24 @@
+* ruby on rails
+** create
+*** rails new sample_app --skip-test-unit
+*** cd sample_app
+*** rails generate controller StaticPages home help --no-test-framework
+** bundle
+*** bundle install --without production (except Gemfile items like: group :production do gem 'pg', '0.15.1' end)
+*** bundle update
+*** bundle install (the exception of production items auto keep)
+** rails & rake cmd(do & redo operator)
+*** rails generate controller FooBars baz quux & rails destroy controller FooBars baz quux
+*** rails generate model Foo bar:string baz:integer & rails destroy model Foo
+*** rake db:migrate & rake db:rollback & rake db:migrate VERSION=0(VERSION is genrated by migrate, echo migrate will cause VERSION++)
+** test
+*** add items in Gemfile (group :development, :test do gem 'rspec-rails', '~> 3.6' end)
+*** bundle install
+*** rails generate rspec:install
+*** rails generate integration_test static_pages
+*** bundle exec rspec
+*** Guard for auto test (https://github.com/guard/guard)
+*** Spork speed up test (add item for rails version>4: gem 'spork-rails', github: 'railstutorial/spork-rails')
 * docker
 curl https://registry.hub.docker.com//v1/repositories/ubuntu/tags | python -mjson.tool
 
