@@ -34,7 +34,7 @@
 ~Tab & u::send {PgUp}
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
-; mouse keybind 
+; mouse keybind
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ~Tab & Up::mousemove 0, -18, 0, R
 ~Tab & Down::MouseMove 0, 18, 0, R
@@ -57,7 +57,7 @@ else
 return
 
 ~Shift::
-KeyWait, Shift 
+KeyWait, Shift
 return
 ~Shift Up::
 If (A_PriorHotKey = "~Shift" AND A_TimeSincePriorHotkey < 130)
@@ -67,7 +67,7 @@ else
 return
 
 ~Alt::
-KeyWait, Alt 
+KeyWait, Alt
 return
 ~Alt Up::
 If (A_PriorHotKey = "~Alt" AND A_TimeSincePriorHotkey < 130)
@@ -103,6 +103,37 @@ return
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ; specify tools keybind
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+#IfWinActive, ahk_class TslGame
+~Control::
+KeyWait, Control
+return
+~Control Up::
+If (A_PriorHotKey = "~Control" AND A_TimeSincePriorHotkey < 200)
+  Send, {Control}
+else
+  Send, {Control Up}
+  return
+
+~Shift::
+KeyWait, Shift
+return
+~Shift Up::
+If (A_PriorHotKey = "~Shift" AND A_TimeSincePriorHotkey < 130)
+  Send, {Shift}
+else
+  Send, {Shift Up}
+  return
+
+~Alt::
+KeyWait, Alt
+return
+~Alt Up::
+If (A_PriorHotKey = "~Alt" AND A_TimeSincePriorHotkey < 130)
+  Send, {Alt}
+else
+  Send, {Alt Up}
+  return
+
 #IfWinActive, ahk_class Emacs
 Alt & m::Send {Space}bp{Space}wv{Space}bn
 Alt & p::Send {Space}pp
