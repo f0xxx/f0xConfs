@@ -139,7 +139,7 @@ Alt & m::Send {Space}bp{Space}wv{Space}bn
 Alt & p::Send {Space}pp
 Alt & o::Send {Space}pf
 Alt & f::Send {Space}sp
-Alt & q::Send {Space}qz
+; Alt & q::Send {Space}qz
 Control::send ^g
 Control & m::Send {Space}wm
 Control & p::Send {Space}pt
@@ -169,7 +169,7 @@ Alt & m::Send {Space}bp{Space}wv{Space}bn
 Alt & p::Send {Space}pp
 Alt & o::Send {Space}pF
 Alt & f::Send {Space}sP
-Alt & q::Send {Space}qz
+; Alt & q::Send {Space}qz
 Control::send ^g
 Control & m::Send {Space}wm
 Control & p::Send {Space}pt
