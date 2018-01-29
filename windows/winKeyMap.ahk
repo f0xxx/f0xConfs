@@ -185,6 +185,16 @@ F1::Send {,}gp
 F2::Send {,}gn
 
 #IfWinActive, ahk_class Chrome_WidgetWin_1
+~Shift::
+KeyWait, Shift
+return
+~Shift Up::
+If (A_PriorHotKey = "~Shift" AND A_TimeSincePriorHotkey < 130)
+  Send, {Shift}
+else
+  Send, {Shift Up}
+  return
+
 Alt & l::send ^{PgDn}
 Alt & h::send ^{PgUp}
 ; Control::send {Escape}
