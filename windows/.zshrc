@@ -84,9 +84,13 @@ source $ZSH/oh-my-zsh.sh
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
-alias f0x="ssh root@10.220.131.241"
+alias f0x="ssh -p 2222 root@127.0.0.1"
+alias hs0="ssh -o \"ServerAliveInterval 60\" root@120.79.56.16"
 
 alias e='emacsclient -t -c'
 
 export ALTERNATE_EDITOR=""
 export EDITOR='emacsclient -t -c'
+
+export PATH=/cygdrive/c/tools/autojump/bin/:$PATH
+tmux
