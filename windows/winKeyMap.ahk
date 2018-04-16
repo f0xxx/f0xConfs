@@ -108,16 +108,16 @@ Alt & p::Send {Space}pp
 Alt & o::Send {Space}pf
 Alt & f::Send {Space}sp
 ; Alt & q::Send {Space}qz
-Control::send ^g
-Control & m::Send {Space}wm
-Control & p::Send {Space}pt
-Control & f::Send {Space}ss
-Control & s::Send {Space}fs
-Control & n::Send {Space}bN
-Control & h::Send {Space}wh
-Control & l::Send {Space}wl
-Control & y::Send {Space}ry
-Control & o::Send {Space}sf
+Ctrl::send ^g
+Ctrl & m::Send {Space}wm
+Ctrl & p::Send {Space}pt
+Ctrl & f::Send {Space}ss
+Ctrl & s::Send {Space}fs
+Ctrl & n::Send {Space}bN
+Ctrl & h::Send {Space}wh
+Ctrl & l::Send {Space}wl
+Ctrl & y::Send {Space}ry
+Ctrl & o::Send {Space}sf
 
 #IfWinActive, ahk_class mintty
 Alt & v::send +{Ins}
@@ -137,26 +137,27 @@ Alt & m::Send {Space}bp{Space}wv{Space}bn
 Alt & p::Send {Space}pp
 Alt & o::Send {Space}pF
 Alt & f::Send {Space}sP
-; Control::send ^g
-; Control & Shift & c::Send {Space}ry
-Control & w::send {Space}bd
-Control & m::Send {Space}wm
-Control & p::Send {Space}pt
-Control & f::Send {Space}ss
-Control & n::Send {Space}bN
-Control & h::Send {Space}wh
-Control & l::Send {Space}wl
-Control & y::Send {Space}ry
-Control & o::Send {Space}sf
-Control & s::Send {F11}{Esc}
+; Ctrl::send ^g
+; Ctrl & Shift & c::Send {Space}ry
+Ctrl & d::send ^d
+Ctrl & u::send ^u
+Ctrl & w::send {Space}bd
+Ctrl & m::Send {Space}wm
+Ctrl & p::Send {Space}pt
+Ctrl & f::Send {Space}ss
+Ctrl & n::Send {Space}bN
+Ctrl & h::Send {Space}wh
+Ctrl & l::Send {Space}wl
+Ctrl & y::Send {Space}ry
+Ctrl & o::Send {Space}sf
+Ctrl & s::Send {F11}
 F4::Send {,}ggzz
 F1::Send {F1}zz
 F2::Send {F2}zz
-
+`::Send {F5}
 ;for c++ code jump
 ; F1::Send {,}gp
 ; F2::Send {,}gn
-
 ;for debug python
 F5::Send {,}'
 F8::Send {,}db
@@ -166,12 +167,13 @@ Alt & Enter::Send {Esc}{,}sb
 Alt & l::send ^{PgDn}
 Alt & h::send ^{PgUp}
 Alt & i::send ^l
-; Control::send {Escape}
-Control & l::send !{Right}
-Control & h::send !{Left}
+; Ctrl::send {Escape}
+Ctrl & l::send !{Right}
+Ctrl & h::send !{Left}
 Alt & q::send ^5
+Ctrl & w::send ^0
 
-Control & s::
+Ctrl & s::
 Send ^s
 Send {Click 1839, 167}
 return
