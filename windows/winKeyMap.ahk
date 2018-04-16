@@ -26,6 +26,8 @@
 !9::send ^9
 !q::send !{F4}
 
+Ctrl & Esc::send {Esc}
+
 ~Ctrl & j::send {Down}
 ~Ctrl & k::send {Up}
 ~Tab & j::send {Down}
@@ -48,35 +50,23 @@
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ; press alone key
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
-~Control::
-KeyWait, Control
+LControl up::
+If (A_PriorKey = "LControl")
+  Send, {Esc}
 return
-~Control Up::
-If (A_PriorHotKey = "~Control" AND A_TimeSincePriorHotkey < 130)
-  Send, {Escape}
-else
-  Send, {Control Up}
-return
+<^d:: Send ^d
 
-~Shift::
-KeyWait, Shift
+LShift up::
+If (A_PriorKey = "LShift")
+  Send {F11}
 return
-~Shift Up::
-If (A_PriorHotKey = "~Shift" AND A_TimeSincePriorHotkey < 130)
-  Send, {F9}
-else
-  Send, {Shift Up}
-return
+<+d:: Send +d
 
-~Alt::
-KeyWait, Alt
+LAlt up::
+If (A_PriorKey = "LAlt")
+  Send {F9}
 return
-~Alt Up::
-If (A_PriorHotKey = "~Alt" AND A_TimeSincePriorHotkey < 130)
-  Send, {F11}
-else
-  Send, {Alt Up}
-return
+<!d:: Send !d
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ; run tools key
@@ -107,35 +97,6 @@ return
 ; specify tools keybind
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 #IfWinActive, ahk_class UnrealWindow
-~Control::
-KeyWait, Control
-return
-~Control Up::
-If (A_PriorHotKey = "~Control" AND A_TimeSincePriorHotkey < 200)
-  Send, {Control}
-else
-  Send, {Control Up}
-  return
-
-~Shift::
-KeyWait, Shift
-return
-~Shift Up::
-If (A_PriorHotKey = "~Shift" AND A_TimeSincePriorHotkey < 130)
-  Send, {Shift}
-else
-  Send, {Shift Up}
-  return
-
-~Alt::
-KeyWait, Alt
-return
-~Alt Up::
-If (A_PriorHotKey = "~Alt" AND A_TimeSincePriorHotkey < 130)
-  Send, {Alt}
-else
-  Send, {Alt Up}
-  return
 
 #IfWinActive, ahk_class Emacs
 Alt & m::Send {Space}bp{Space}wv{Space}bn
@@ -174,6 +135,7 @@ Alt & o::Send {Space}pF
 Alt & f::Send {Space}sP
 ; Alt & q::Send {Space}qz
 ; Control::send ^g
+Control & v::Send {Space}ry
 Control & m::Send {Space}wm
 Control & p::Send {Space}pt
 Control & f::Send {Space}ss
@@ -197,16 +159,6 @@ F9::Send {,}db
 Control & s::Send {Space}fs{,}sb
 
 #IfWinActive, ahk_class Chrome_WidgetWin_1
-~Shift::
-KeyWait, Shift
-return
-~Shift Up::
-If (A_PriorHotKey = "~Shift" AND A_TimeSincePriorHotkey < 130)
-  Send, {Shift}
-else
-  Send, {Shift Up}
-  return
-
 Alt & l::send ^{PgDn}
 Alt & h::send ^{PgUp}
 Alt & i::send ^l
@@ -220,51 +172,3 @@ Control & h::send !{Left}
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ; others
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
-; Shift::send F11
-; Shift & `::send ~
-; Shift & 1::send !
-; Shift & 2::send @
-; Shift & 3::send #
-; Shift & 4::send $
-; ; Shift & 5::send %
-; Shift & 6::send ^
-; Shift & 7::send &
-; Shift & 8::send *
-; Shift & 9::send (
-; Shift & 0::send )
-; Shift & -::send _
-; Shift & =::send +
-; Shift & q::send Q
-; Shift & w::send W
-; Shift & e::send E
-; Shift & r::send R
-; Shift & t::send T
-; Shift & y::send Y
-; Shift & u::send U
-; Shift & i::send I
-; Shift & o::send O
-; Shift & p::send P
-; Shift & [::send {
-; Shift & ]::send }
-; Shift & \::send |
-; Shift & a::send A
-; Shift & s::send S
-; Shift & d::send D
-; Shift & f::send F
-; Shift & g::send G
-; Shift & h::send H
-; Shift & j::send J
-; Shift & k::send K
-; Shift & l::send L
-; ; Shift & ;::send :
-; ; Shift & '::send \"
-; Shift & z::send Z
-; Shift & x::send X
-; Shift & c::send C
-; Shift & v::send V
-; Shift & b::send B
-; Shift & n::send N
-; Shift & m::send M
-; Shift & ,::send <
-; Shift & .::send >
-; Shift & /::send ?
