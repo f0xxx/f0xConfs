@@ -1,8 +1,8 @@
 ﻿;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ; string replace
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
-::xxx::P@ssw0rd
-::sss::/opt/Symantec/sdcssagent/IPS/sisipsoverride.sh || /opt/Symantec/scspagent/IPS/sisipsoverride.sh
+; ::xxx::P@ssw0rd
+; ::sss::/opt/Symantec/sdcssagent/IPS/sisipsoverride.sh || /opt/Symantec/scspagent/IPS/sisipsoverride.sh
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ; gloable key change
@@ -26,6 +26,8 @@
 !9::send ^9
 !q::send !{F4}
 
+~Ctrl & j::send {Down}
+~Ctrl & k::send {Up}
 ~Tab & j::send {Down}
 ~Tab & k::send {Up}
 ~Tab & h::send {Left}
@@ -50,7 +52,7 @@
 KeyWait, Control
 return
 ~Control Up::
-If (A_PriorHotKey = "~Control" AND A_TimeSincePriorHotkey < 200)
+If (A_PriorHotKey = "~Control" AND A_TimeSincePriorHotkey < 130)
   Send, {Escape}
 else
   Send, {Control Up}
@@ -61,7 +63,7 @@ KeyWait, Shift
 return
 ~Shift Up::
 If (A_PriorHotKey = "~Shift" AND A_TimeSincePriorHotkey < 130)
-  Send, {F11}
+  Send, {F9}
 else
   Send, {Shift Up}
 return
@@ -71,7 +73,7 @@ KeyWait, Alt
 return
 ~Alt Up::
 If (A_PriorHotKey = "~Alt" AND A_TimeSincePriorHotkey < 130)
-  Send, {F9}
+  Send, {F11}
 else
   Send, {Alt Up}
 return
@@ -181,11 +183,18 @@ Control & h::Send {Space}wh
 Control & l::Send {Space}wl
 Control & y::Send {Space}ry
 Control & o::Send {Space}sf
-F4::Send {,}gg
-; F1::Send {,}gp ;for c++ code jump
-; F2::Send {,}gn ;for c++ code jump
-; F5::Send {,}sb
-Control & s::Send {Space}fs{,}sb ;for debug python
+F4::Send {,}ggzz
+F1::Send {F1}zz
+F2::Send {F2}zz
+
+;for c++ code jump
+; F1::Send {,}gp
+; F2::Send {,}gn
+
+;for debug python
+F5::Send {,}'
+F9::Send {,}db
+Control & s::Send {Space}fs{,}sb
 
 #IfWinActive, ahk_class Chrome_WidgetWin_1
 ~Shift::

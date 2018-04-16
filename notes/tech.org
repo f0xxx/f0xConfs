@@ -198,3 +198,12 @@ sudo systemctl get-default
 ** change line num format search "linum-format"
 * getting the hex codes(iterm2)
 ** xxd -psd & just input key
+* git store username&password local
+$ git config credential.helper store
+$ git push http://example.com/repo.git
+Username: <type your username>
+Password: <type your password>
+
+[several days later]
+$ git push http://example.com/repo.git
+[your credentials are used automatically]
