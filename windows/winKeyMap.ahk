@@ -26,30 +26,34 @@
 !9::send ^9
 !q::send !{F4}
 
-Ctrl & Esc::send {Esc}
+Ctrl & Esc::return
+Alt & Esc::return
 
-~Ctrl & j::send {Down}
-~Ctrl & k::send {Up}
-~Tab & j::send {Down}
-~Tab & k::send {Up}
-~Tab & h::send {Left}
-~Tab & l::send {Right}
-~Tab & d::send {PgDn}
-~Tab & u::send {PgUp}
+Ctrl & j::send {Down}
+Ctrl & k::send {Up}
+Ctrl & d::send {PgDn}
+Ctrl & u::send {PgUp}
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ; mouse keybind
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
-~Tab & Up::mousemove 0, -18, 0, R
-~Tab & Down::MouseMove 0, 18, 0, R
-~Tab & Left::MouseMove -18, 0, 0, R
-~Tab & Right::MouseMove 18, 0, 0, R
-~Tab & Enter::MouseClick
-~Tab & Space::MouseClick, Right
+Tab & k::mousemove 0, -18, 0, R
+Tab & j::MouseMove 0, 18, 0, R
+Tab & h::MouseMove -18, 0, 0, R
+Tab & l::MouseMove 18, 0, 0, R
+Tab & Enter::MouseClick
+Tab & Space::MouseClick, Right
+Tab & t::Send {Click 1839, 167}
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ; press alone key
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+Tab up::
+If (A_PriorKey = "Tab")
+  Send, {Tab}
+return
+Tab & r:: Send {Tab}r
+
 LControl up::
 If (A_PriorKey = "LControl")
   Send, {Esc}
@@ -58,7 +62,7 @@ return
 
 LShift up::
 If (A_PriorKey = "LShift")
-  Send {F11}
+  Send {F10}
 return
 <+d:: Send +d
 
@@ -133,18 +137,18 @@ Alt & m::Send {Space}bp{Space}wv{Space}bn
 Alt & p::Send {Space}pp
 Alt & o::Send {Space}pF
 Alt & f::Send {Space}sP
-; Alt & q::Send {Space}qz
 ; Control::send ^g
-Control & v::Send {Space}ry
+; Control & Shift & c::Send {Space}ry
+Control & w::send {Space}bd
 Control & m::Send {Space}wm
 Control & p::Send {Space}pt
 Control & f::Send {Space}ss
-; Control & s::Send {Space}fs
 Control & n::Send {Space}bN
 Control & h::Send {Space}wh
 Control & l::Send {Space}wl
 Control & y::Send {Space}ry
 Control & o::Send {Space}sf
+Control & s::Send {F11}{Esc}
 F4::Send {,}ggzz
 F1::Send {F1}zz
 F2::Send {F2}zz
@@ -155,8 +159,8 @@ F2::Send {F2}zz
 
 ;for debug python
 F5::Send {,}'
-F9::Send {,}db
-Control & s::Send {Space}fs{,}sb
+F8::Send {,}db
+Alt & Enter::Send {Esc}{,}sb
 
 #IfWinActive, ahk_class Chrome_WidgetWin_1
 Alt & l::send ^{PgDn}
@@ -165,7 +169,12 @@ Alt & i::send ^l
 ; Control::send {Escape}
 Control & l::send !{Right}
 Control & h::send !{Left}
+Alt & q::send ^5
 
+Control & s::
+Send ^s
+Send {Click 1839, 167}
+return
 ;#IfWinActive, ahk_exe WeChat.exe
 ;Tab::return
 
