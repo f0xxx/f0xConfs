@@ -31,6 +31,8 @@ Alt & Esc::return
 
 Ctrl & j::send {Down}
 Ctrl & k::send {Up}
+Ctrl & h::send {Left}
+Ctrl & l::send {Right}
 Ctrl & d::send {PgDn}
 Ctrl & u::send {PgUp}
 
@@ -139,8 +141,8 @@ Ctrl & m::Send {Space}wm
 Ctrl & p::Send {Space}pt
 Ctrl & f::Send {Space}ss
 Ctrl & n::Send {Space}bN
-Ctrl & h::Send {Space}wh
-Ctrl & l::Send {Space}wl
+; Ctrl & h::Send {Space}wh
+; Ctrl & l::Send {Space}wl
 Ctrl & y::Send {Space}ry
 Ctrl & o::Send {Space}sf
 Ctrl & s::Send {F11}
