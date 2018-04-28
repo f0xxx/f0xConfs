@@ -1,3 +1,8 @@
+* mango db
+** show dbs
+** use movies
+** db.movies.count()
+** db.movies.find()
 * big data
 ** 视频推荐系统设计
 *** 视频分类
