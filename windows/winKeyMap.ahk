@@ -37,23 +37,16 @@ Ctrl & u::send {PgUp}
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ; mouse keybind
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
-Tab & k::mousemove 0, -18, 0, R
-Tab & j::MouseMove 0, 18, 0, R
-Tab & h::MouseMove -18, 0, 0, R
-Tab & l::MouseMove 18, 0, 0, R
-Tab & Enter::MouseClick
-Tab & Space::MouseClick, Right
-Tab & t::Send {Click 1839, 167}
+~Tab & k::mousemove 0, -18, 0, R
+~Tab & j::MouseMove 0, 18, 0, R
+~Tab & h::MouseMove -18, 0, 0, R
+~Tab & l::MouseMove 18, 0, 0, R
+~Tab & Enter::MouseClick
+
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ; press alone key
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
-Tab up::
-If (A_PriorKey = "Tab")
-  Send, {Tab}
-return
-Tab & r:: Send {Tab}r
-
 LControl up::
 If (A_PriorKey = "LControl")
   Send, {Esc}
@@ -137,11 +130,11 @@ Alt & m::Send {Space}bp{Space}wv{Space}bn
 Alt & p::Send {Space}pp
 Alt & o::Send {Space}pF
 Alt & f::Send {Space}sP
+Alt & q::send {Space}bd
 ; Ctrl::send ^g
 ; Ctrl & Shift & c::Send {Space}ry
 Ctrl & d::send ^d
 Ctrl & u::send ^u
-Ctrl & w::send {Space}bd
 Ctrl & m::Send {Space}wm
 Ctrl & p::Send {Space}pt
 Ctrl & f::Send {Space}ss
