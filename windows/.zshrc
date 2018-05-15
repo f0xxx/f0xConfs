@@ -2,12 +2,12 @@
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
 
 # Path to your oh-my-zsh installation.
-  export ZSH=/cygdrive/c/tools/home/f0x/.oh-my-zsh
+export ZSH=/cygdrive/c/tools/home/f0x/.oh-my-zsh
 
 # Set name of the theme to load. Optionally, if you set this to "random"
 # it'll load a random theme each time that oh-my-zsh is loaded.
 # See https://github.com/robbyrussell/oh-my-zsh/wiki/Themes
-ZSH_THEME="robbyrussell"
+ZSH_THEME="michelebologna"
 
 # Uncomment the following line to use case-sensitive completion.
 # CASE_SENSITIVE="true"
@@ -84,13 +84,8 @@ source $ZSH/oh-my-zsh.sh
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
-alias f0x="ssh -p 2222 root@127.0.0.1"
+# alias f0x="ssh -p 2222 root@127.0.0.1"
 alias hs0="ssh -o \"ServerAliveInterval 60\" root@120.79.56.16"
-
-alias e='emacsclient -t -c'
-
-export ALTERNATE_EDITOR=""
-export EDITOR='emacsclient -t -c'
 
 export PATH=/cygdrive/c/tools/autojump/bin/:$PATH
 tmux

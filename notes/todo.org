@@ -1,7 +1,35 @@
 * todo job:
-** TODO proxy 爬取
-** TODO 中间件修改爬虫的url 使用google快照
-** TODO 按电影名字和年代作为key存储信息
+** TODO 判断视频内容是否一致
+** TODO 制作豆瓣电影大数据分析图谱
+** TODO 爬虫文档编写
+*** 需要解决的问题
+**** 获取深度学习需要的标签数据
+**** 良好的扩展性以适应快速获取数据的需求
+**** 能有针对的快速开发精准高效的爬取数据
+**** 反爬策略的适应性
+**** 针对外网GFW的处理
+*** 技术分析和选型
+**** scrapy
+**** redis
+**** docker-compose
+**** tor
+**** privoxy
+**** portia
+**** ippool
+**** squid
+****
+*** 框架
+*** 实现
+*** todo in future
+
+** DONE 中间件修改爬虫的url使用google快照
+   CLOSED: [2018-05-21 一 09:45]
+** DONE 爬取数据结构整理(数据去重)
+   CLOSED: [2018-05-21 一 09:45]
+*** douban(电影 电影简介 分集简介 资料 演员 演员资料 剧照 演员照片 电影海报)
+*** tvsou
+** DONE 爬取数据结构整理proxy(生成ip pool)
+   CLOSED: [2018-05-16 三 14:51]
 * todo main:
 ** TODO 英语(1,3,5)
 ** TODO 健身(2,4,6)

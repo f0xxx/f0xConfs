@@ -26,8 +26,9 @@
 !9::send ^9
 !q::send !{F4}
 
-Ctrl & Esc::return
-Alt & Esc::return
+; Ctrl & Esc::return
+^Escape::return
+!Escape::return
 
 Ctrl & j::send {Down}
 Ctrl & k::send {Up}
@@ -51,7 +52,8 @@ Ctrl & u::send {PgUp}
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 LControl up::
 If (A_PriorKey = "LControl")
-  Send, {Esc}
+  Send {Esc down}
+  Send {Esc up}
 return
 <^d:: Send ^d
 

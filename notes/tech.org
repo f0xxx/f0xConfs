@@ -1,6 +1,6 @@
 * tar passwd
-** tar -zcvf - test|openssl des3 -salt -k password | dd of=test.des3
-** dd if=test.des3 |openssl des3 -d -k password|tar zxf -
+** tar -zcvf - test|openssl des3 -salt -k qweqew | dd of=test.des3
+** dd if=test.des3 |openssl des3 -d -k qweqwe|tar zxf -
 * mango db
 ** show dbs
 ** use movies

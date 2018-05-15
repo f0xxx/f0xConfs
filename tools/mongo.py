@@ -46,9 +46,17 @@ db = client['hunt5']
 
 db.collection_names()
 
-movies = db['movies']
+movies = db['movies.douban']
 
 print movies.find({}).count()
+query = {'$regex':'/2\d+/'}
+print movies.find({'url': query}).count()
+print movies.find_one({'url': query})['url']
+# print movies.find_one({'name': 'Dust'})
+# print movies.find({ 'name' : { '$exists' : 'true' },'date' : { '$exists' : 'true' } }).count()
+# for m in movies.find({ 'name' : { '$exists' : 'true' },'date' : { '$exists' : 'true' } }):
+#     if m['date'] == '2018':
+#         print '[%s(%s)]' % (m['name'],m['date'])
 
 # print movies.find({"name":"米花之味"})
 # movies.update_one({"name":"米花之味"},{"$set": {"year": "20130408120000"}})
