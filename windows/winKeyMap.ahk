@@ -156,7 +156,7 @@ F2::Send {F2}zz
 ;for debug python
 F5::Send {,}'
 F8::Send {,}db
-Alt & Enter::Send {Esc}{,}sb
+Alt & Enter::Send {,}sb
 
 #IfWinActive, ahk_class Chrome_WidgetWin_1
 Alt & l::send ^{PgDn}
