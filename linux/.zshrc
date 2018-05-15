@@ -109,9 +109,6 @@ alias vi='emacsclient -t -c'
 # added by Anaconda2 installer
 export PATH="/root/anaconda2/bin:$PATH"
 
-mount -t vboxsf tmp ~/tmp
-mount -t vboxsf winShareD ~/winShareD
-
 # export http_proxy=http://hunt5:Ihad123321@172.29.3.63:7788
 # export http_proxy=https://hunt5:Ihad123321@172.29.3.63:7788
 
