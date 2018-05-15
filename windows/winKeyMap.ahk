@@ -132,7 +132,7 @@ Alt & m::Send {Space}bp{Space}wv{Space}bn
 Alt & p::Send {Space}pp
 Alt & o::Send {Space}pF
 Alt & f::Send {Space}sP
-Alt & q::send {Space}bd
+Alt & q::send {Space}qz
 ; Ctrl::send ^g
 ; Ctrl & Shift & c::Send {Space}ry
 Ctrl & d::send ^d
